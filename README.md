@@ -18,6 +18,8 @@ Watch the screen recording below in order to know what the final product should 
 
 ## Instructions
 
+Please fork and clone this repository.
+
 ## Part 1 - Model and Model Controller
 
 We're going to create a model object that represents a vote, with the name of the person who voted, and their response.
