@@ -94,7 +94,7 @@ Create a new Swift file called "VoteControllerProtocol.swift". Create a class pr
 
 In the `PollingTabBarViewController` create a new instance of `VoteController` in a constant called `voteController`. This is the instance of the model controller that we need to give access to to any of the tab bar controller's child view controllers that conform to the `ViteControllerProtocol`:
 
-1. Make a function called `passVoteControllerToChildViewControllers`. It have any parameters, and it doesn't return anything.
+1. Make a function called `passVoteControllerToChildViewControllers`. It doesn't have any parameters, and it doesn't return anything.
 2. This function will make use of the tab bar controller's `viewControllers` property, which again holds all of its child view controllers that are embedded in the tab bar. This property is optional, so unwrap it using guard-let.
 3. Create a for-in loop that iterates through each view controller in the newly unwrapped `viewControllers` property.
 4. In each iteration of the loop, you should check if the view controller conforms to the `VoteControllerProtocol` (hint: try casting the view controller as the protocol). If it does conform to the protocol, you can pass the `voteController` to the view controller as you will have access to the view controller's own `voteController` property.
