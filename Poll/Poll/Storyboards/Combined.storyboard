@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Combined View Controller-->
+        <!--Combined-->
         <scene sceneID="QaE-Va-Ptv">
             <objects>
                 <viewController id="qy5-iT-C3U" customClass="CombinedViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,18 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="q8g-ZO-qvA">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qC7-AX-4hE">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
                                         <connections>
-                                            <segue destination="D13-uN-vqJ" kind="embed" id="zHL-A0-q0q"/>
+                                            <segue destination="D13-uN-vqJ" kind="embed" identifier="VotingSegue" id="zHL-A0-q0q"/>
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bZ-RN-0Ve">
-                                        <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
+                                        <rect key="frame" x="0.0" y="299" width="375" height="299"/>
                                         <connections>
-                                            <segue destination="74m-SC-FNm" kind="embed" id="8oF-3R-wpw"/>
+                                            <segue destination="74m-SC-FNm" kind="embed" identifier="ResultsSegue" id="8oF-3R-wpw"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
@@ -45,6 +45,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zdZ-pG-ENy"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Combined" id="p4s-3o-D3y"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bR6-5H-P1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,5 +1,5 @@
 //
-//  VotingViewController.swift
+//  PollingTabBarController.swift
 //  Poll
 //
 //  Created by Dillon McElhinney on 8/30/18.
@@ -8,22 +8,24 @@
 
 import UIKit
 
-class VotingViewController: UIViewController {
+class PollingTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        passVoteControllerToChildViewControllers()
     }
 
     // MARK: - Properties
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var responseTextField: UITextField!
+    let voteController = VoteController()
     
-    
-    
-    @IBAction func submitResponse(_ sender: UIButton) {
-        
+    func passVoteControllerToChildViewControllers() {
+        guard let viewControllers = self.viewControllers else { return }
+        for viewController in viewControllers {
+            if let viewController = viewController as? VoteControllerProtocol {
+                viewController.voteController = voteController
+            }
+        }
     }
     
 

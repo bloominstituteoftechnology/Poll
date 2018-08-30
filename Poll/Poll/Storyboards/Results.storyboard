@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Results Table View Controller-->
+        <!--Results-->
         <scene sceneID="TxI-vj-K0o">
             <objects>
                 <tableViewController id="NZb-Vw-A6h" customClass="ResultsTableViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="4xO-Ep-jzr" detailTextLabel="TIg-Qh-TjI" style="IBUITableViewCellStyleValue1" id="P6P-lV-G7M">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultCell" textLabel="4xO-Ep-jzr" detailTextLabel="TIg-Qh-TjI" style="IBUITableViewCellStyleValue1" id="P6P-lV-G7M">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P6P-lV-G7M" id="U8p-Gn-SUK">
@@ -48,6 +48,8 @@
                             <outlet property="delegate" destination="NZb-Vw-A6h" id="Ddh-3N-OyP"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Results" id="S1b-5b-w3Z"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15k-Vg-eJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
