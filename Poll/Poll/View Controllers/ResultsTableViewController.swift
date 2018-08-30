@@ -11,25 +11,18 @@ import UIKit
 class ResultsTableViewController: UITableViewController, VoteControllerProtocol {
 
     //MARK: - Lifecycle Methods
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        //Reload table view data when view is loaded
         tableView.reloadData()
     }
     
-    
-
     // MARK: - Properties
-    
     //Conform to Vote Controller Protocol
     var voteController: VoteController?
 
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return voteController?.votes.count ?? 0
     }
