@@ -11,19 +11,28 @@ import UIKit
 class ResultsTableViewController: UITableViewController, VoteControllerProtocol {
 
     //MARK: - Lifecycle Methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //Add observer for when new vote is added.
+        NotificationCenter.default.addObserver(self, selector: #selector(ResultsTableViewController.updateViews), name: NSNotification.Name("refreshTable"), object: nil)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        //Reload table view data when view is loaded
-        voteController?.sortVotesByTime()
-        tableView.reloadData()
-        
+        updateViews()
     }
     
     // MARK: - Properties
     //Conform to Vote Controller Protocol
     var voteController: VoteController?
 
+    //MARK: - Utility Methods
+    @objc func updateViews() {
+        tableView.reloadData()
+    }
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return voteController?.votes.count ?? 0

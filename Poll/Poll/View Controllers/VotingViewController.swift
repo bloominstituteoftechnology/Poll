@@ -32,6 +32,12 @@ class VotingViewController: UIViewController, VoteControllerProtocol {
         
         //Dismiss software keyboard
         view.endEditing(true)
+        
+        //Sort votes by time
+        voteController.sortVotesByTime()
+        
+        //Tell results table view to refresh itself
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "refreshTable"), object: nil)
     }
     
     // MARK: - Utility Methods

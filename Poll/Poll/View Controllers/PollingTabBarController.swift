@@ -16,6 +16,9 @@ class PollingTabBarController: UITabBarController {
         
         //Make sure all the Child View Controllers have access to the Vote Controller
         passVoteControllerToChildViewControllers()
+        
+        //Sort example votes
+        voteController.sortVotesByTime()
     }
 
     // MARK: - Properties
