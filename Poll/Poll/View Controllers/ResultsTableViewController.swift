@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ResultsTableViewController: UITableViewController {
+class ResultsTableViewController: UITableViewController, VoteControllerProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,28 +24,29 @@ class ResultsTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return voteController?.votes.count ?? 0
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "VoteCell", for: indexPath)
 
-        // Configure the cell...
+        let vote = voteController?.votes[indexPath.row]
+        
+        cell.textLabel?.text = vote?.name
+        cell.detailTextLabel?.text = vote?.response
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -91,5 +92,5 @@ class ResultsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    var voteController: VoteController?
 }
