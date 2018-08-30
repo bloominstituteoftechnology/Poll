@@ -13,6 +13,7 @@
 		825E1C0A2138919200E427A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 825E1C092138919200E427A4 /* Assets.xcassets */; };
 		825E1C0D2138919200E427A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825E1C0B2138919200E427A4 /* LaunchScreen.storyboard */; };
 		825E1C152138921A00E427A4 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E1C142138921A00E427A4 /* Vote.swift */; };
+		825E1C172138937E00E427A4 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E1C162138937E00E427A4 /* VoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		825E1C0C2138919200E427A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		825E1C0E2138919200E427A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		825E1C142138921A00E427A4 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		825E1C162138937E00E427A4 /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				825E1C042138919100E427A4 /* ViewController.swift */,
 				825E1C062138919100E427A4 /* Main.storyboard */,
 				825E1C142138921A00E427A4 /* Vote.swift */,
+				825E1C162138937E00E427A4 /* VoteController.swift */,
 				825E1C092138919200E427A4 /* Assets.xcassets */,
 				825E1C0B2138919200E427A4 /* LaunchScreen.storyboard */,
 				825E1C0E2138919200E427A4 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				825E1C052138919100E427A4 /* ViewController.swift in Sources */,
+				825E1C172138937E00E427A4 /* VoteController.swift in Sources */,
 				825E1C152138921A00E427A4 /* Vote.swift in Sources */,
 				825E1C032138919100E427A4 /* AppDelegate.swift in Sources */,
 			);
