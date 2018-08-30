@@ -20,6 +20,7 @@
 		9614A90D2138961B0060C2E0 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9614A90C2138961B0060C2E0 /* ResultsTableViewController.swift */; };
 		9614A90F2138969E0060C2E0 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9614A90E2138969E0060C2E0 /* Combined.storyboard */; };
 		9614A911213897A50060C2E0 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9614A910213897A50060C2E0 /* CombinedViewController.swift */; };
+		96CD7C842138A5A5004DA204 /* VoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CD7C832138A5A5004DA204 /* VoteControllerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9614A90C2138961B0060C2E0 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
 		9614A90E2138969E0060C2E0 /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
 		9614A910213897A50060C2E0 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
+		96CD7C832138A5A5004DA204 /* VoteControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteControllerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				9614A8FF2138907F0060C2E0 /* Vote.swift */,
 				9614A901213890B50060C2E0 /* VoteController.swift */,
+				96CD7C832138A5A5004DA204 /* VoteControllerProtocol.swift */,
 			);
 			path = "Model+ModelController";
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				9614A90D2138961B0060C2E0 /* ResultsTableViewController.swift in Sources */,
 				9614A905213891ED0060C2E0 /* PollTabBarController.swift in Sources */,
 				9614A911213897A50060C2E0 /* CombinedViewController.swift in Sources */,
+				96CD7C842138A5A5004DA204 /* VoteControllerProtocol.swift in Sources */,
 				9614A902213890B50060C2E0 /* VoteController.swift in Sources */,
 				9614A9002138907F0060C2E0 /* Vote.swift in Sources */,
 				9614A8EE21388F760060C2E0 /* AppDelegate.swift in Sources */,
