@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FKE-Je-qEK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FKE-Je-qEK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Combined View Controller-->
+        <!--Combined-->
         <scene sceneID="ONv-e4-ox5">
             <objects>
                 <viewController id="FKE-Je-qEK" customClass="CombinedViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,7 +28,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Rk-u7-81Y">
-                                <rect key="frame" x="0.0" y="480" width="375" height="187"/>
+                                <rect key="frame" x="0.0" y="480" width="375" height="138"/>
                                 <connections>
                                     <segue destination="mC4-b2-WMS" kind="embed" identifier="Results" id="l36-6c-02v"/>
                                 </connections>
@@ -46,6 +46,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uoo-f1-Sd6"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Combined" id="i8m-w4-VQD">
+                        <color key="badgeColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Shk-rS-vz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
