@@ -30,12 +30,12 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ResultCell", for: indexPath)
-        guard let vote = voteController?.votes[indexPath.row] else { return UITableViewCell() }
         
-        // Configure the cell...
-        cell.textLabel?.text = vote.name
-        cell.detailTextLabel?.text = vote.response
+        //Make sure the cell can be cast as a Result Table View Cell, and that there is a vote that correseponds to the index path.
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ResultCell", for: indexPath) as? ResultTableViewCell, let vote = voteController?.votes[indexPath.row] else { return UITableViewCell() }
+        
+        // Set the cell's vote property
+        cell.vote = vote
         
         return cell
     }
