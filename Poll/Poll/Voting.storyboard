@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ICU-in-5el">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voting View Controller-->
+        <scene sceneID="5M7-hE-iOW">
+            <objects>
+                <viewController id="ICU-in-5el" customClass="VotingViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z2r-Xm-NYd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40H-B7-C2N">
+                                <rect key="frame" x="16" y="101" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your favorite color?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXj-Xm-y4p">
+                                <rect key="frame" x="16" y="63" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egq-2N-7fn">
+                                <rect key="frame" x="163" y="201" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitVote:" destination="ICU-in-5el" eventType="touchUpInside" id="tEO-jV-f64"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Response" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ywx-2c-uA8">
+                                <rect key="frame" x="16" y="149" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pXj-Xm-y4p" firstAttribute="trailing" secondItem="40H-B7-C2N" secondAttribute="trailing" id="09Z-Qs-xRE"/>
+                            <constraint firstItem="ywx-2c-uA8" firstAttribute="top" secondItem="40H-B7-C2N" secondAttribute="bottom" constant="18" id="5oF-iV-eoI"/>
+                            <constraint firstItem="pXj-Xm-y4p" firstAttribute="trailing" secondItem="Z2r-Xm-NYd" secondAttribute="trailingMargin" id="GPu-gt-pKS"/>
+                            <constraint firstItem="Egq-2N-7fn" firstAttribute="top" secondItem="ywx-2c-uA8" secondAttribute="bottom" constant="22" id="QaY-fZ-A4u"/>
+                            <constraint firstItem="ywx-2c-uA8" firstAttribute="centerX" secondItem="Egq-2N-7fn" secondAttribute="centerX" id="XOE-QL-pOw"/>
+                            <constraint firstItem="pXj-Xm-y4p" firstAttribute="leading" secondItem="Z2r-Xm-NYd" secondAttribute="leadingMargin" id="a2F-Eh-8lc"/>
+                            <constraint firstItem="40H-B7-C2N" firstAttribute="top" secondItem="pXj-Xm-y4p" secondAttribute="bottom" constant="17" id="dcc-7W-XRD"/>
+                            <constraint firstItem="40H-B7-C2N" firstAttribute="trailing" secondItem="ywx-2c-uA8" secondAttribute="trailing" id="ezB-k9-Jcg"/>
+                            <constraint firstItem="pXj-Xm-y4p" firstAttribute="top" secondItem="VBj-lg-rkT" secondAttribute="top" constant="19" id="qrk-PD-gdq"/>
+                            <constraint firstItem="pXj-Xm-y4p" firstAttribute="leading" secondItem="40H-B7-C2N" secondAttribute="leading" id="y7t-ey-ave"/>
+                            <constraint firstItem="40H-B7-C2N" firstAttribute="leading" secondItem="ywx-2c-uA8" secondAttribute="leading" id="yDH-ei-l3s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VBj-lg-rkT"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameField" destination="40H-B7-C2N" id="zHZ-2U-7bI"/>
+                        <outlet property="responseField" destination="ywx-2c-uA8" id="Ja4-Dc-ZTG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POX-hH-bWA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="157.38916256157637"/>
+        </scene>
+    </scenes>
+</document>
