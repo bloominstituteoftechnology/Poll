@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Voting View Controller-->
         <scene sceneID="F0e-sb-MG2">
             <objects>
-                <viewController id="3ly-28-bGe" sceneMemberID="viewController">
+                <viewController id="3ly-28-bGe" customClass="VotingViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WrQ-zX-gid">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,6 +42,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brj-Mj-Sun">
                                         <rect key="frame" x="0.0" y="126" width="343" height="30"/>
                                         <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitResponse:" destination="3ly-28-bGe" eventType="touchUpInside" id="jpJ-6c-nyr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -54,6 +57,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bgf-az-lNa"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="NnP-rL-QWC" id="6eh-Wv-t8P"/>
+                        <outlet property="responseTextField" destination="ebG-YX-RyB" id="N2B-GR-XIj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jwg-Pb-5bj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

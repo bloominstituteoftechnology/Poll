@@ -14,6 +14,12 @@
 		341775772138701100B3BF05 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341775762138701100B3BF05 /* Vote.swift */; };
 		341775792138704B00B3BF05 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341775782138704B00B3BF05 /* VoteController.swift */; };
 		3417757B213870F600B3BF05 /* Voting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3417757A213870F600B3BF05 /* Voting.storyboard */; };
+		3417757D2138729700B3BF05 /* VotingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417757C2138729700B3BF05 /* VotingViewController.swift */; };
+		3417757F2138731400B3BF05 /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3417757E2138731400B3BF05 /* Results.storyboard */; };
+		34177583213873A200B3BF05 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34177582213873A200B3BF05 /* ResultsTableViewController.swift */; };
+		34177585213873DB00B3BF05 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34177584213873DB00B3BF05 /* Combined.storyboard */; };
+		341775872138747A00B3BF05 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341775862138747A00B3BF05 /* CombinedViewController.swift */; };
+		341775892138759400B3BF05 /* PollingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341775882138759400B3BF05 /* PollingTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		341775762138701100B3BF05 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
 		341775782138704B00B3BF05 /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
 		3417757A213870F600B3BF05 /* Voting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Voting.storyboard; sourceTree = "<group>"; };
+		3417757C2138729700B3BF05 /* VotingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingViewController.swift; sourceTree = "<group>"; };
+		3417757E2138731400B3BF05 /* Results.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
+		34177582213873A200B3BF05 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultsTableViewController.swift; path = Poll/ResultsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		34177584213873DB00B3BF05 /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
+		341775862138747A00B3BF05 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CombinedViewController.swift; path = Poll/CombinedViewController.swift; sourceTree = SOURCE_ROOT; };
+		341775882138759400B3BF05 /* PollingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PollingTabBarController.swift; path = Poll/PollingTabBarController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +70,38 @@
 		3417756321386F7B00B3BF05 /* Poll */ = {
 			isa = PBXGroup;
 			children = (
+				341775812138736000B3BF05 /* Storyboards */,
+				34177582213873A200B3BF05 /* ResultsTableViewController.swift */,
+				341775882138759400B3BF05 /* PollingTabBarController.swift */,
+				341775862138747A00B3BF05 /* CombinedViewController.swift */,
 				341775762138701100B3BF05 /* Vote.swift */,
 				341775782138704B00B3BF05 /* VoteController.swift */,
-				3417756421386F7B00B3BF05 /* AppDelegate.swift */,
-				3417756821386F7B00B3BF05 /* Main.storyboard */,
-				3417757A213870F600B3BF05 /* Voting.storyboard */,
-				3417756B21386F7C00B3BF05 /* Assets.xcassets */,
-				3417756D21386F7C00B3BF05 /* LaunchScreen.storyboard */,
-				3417757021386F7C00B3BF05 /* Info.plist */,
+				3417757C2138729700B3BF05 /* VotingViewController.swift */,
+				341775802138732100B3BF05 /* Resources */,
 			);
 			path = Poll;
+			sourceTree = "<group>";
+		};
+		341775802138732100B3BF05 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3417756421386F7B00B3BF05 /* AppDelegate.swift */,
+				3417756B21386F7C00B3BF05 /* Assets.xcassets */,
+				3417757021386F7C00B3BF05 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		341775812138736000B3BF05 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3417756821386F7B00B3BF05 /* Main.storyboard */,
+				3417757A213870F600B3BF05 /* Voting.storyboard */,
+				3417757E2138731400B3BF05 /* Results.storyboard */,
+				34177584213873DB00B3BF05 /* Combined.storyboard */,
+				3417756D21386F7C00B3BF05 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,9 +163,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3417756F21386F7C00B3BF05 /* LaunchScreen.storyboard in Resources */,
+				3417757F2138731400B3BF05 /* Results.storyboard in Resources */,
 				3417756C21386F7C00B3BF05 /* Assets.xcassets in Resources */,
 				3417756A21386F7B00B3BF05 /* Main.storyboard in Resources */,
 				3417757B213870F600B3BF05 /* Voting.storyboard in Resources */,
+				34177585213873DB00B3BF05 /* Combined.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +181,10 @@
 				341775792138704B00B3BF05 /* VoteController.swift in Sources */,
 				3417756521386F7B00B3BF05 /* AppDelegate.swift in Sources */,
 				341775772138701100B3BF05 /* Vote.swift in Sources */,
+				341775892138759400B3BF05 /* PollingTabBarController.swift in Sources */,
+				3417757D2138729700B3BF05 /* VotingViewController.swift in Sources */,
+				34177583213873A200B3BF05 /* ResultsTableViewController.swift in Sources */,
+				341775872138747A00B3BF05 /* CombinedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SS9AYZ8LT;
-				INFOPLIST_FILE = Poll/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Poll/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SS9AYZ8LT;
-				INFOPLIST_FILE = Poll/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Poll/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
