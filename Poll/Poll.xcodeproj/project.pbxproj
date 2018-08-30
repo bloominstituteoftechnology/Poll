@@ -20,6 +20,7 @@
 		825E1C2421389B9500E427A4 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825E1C2321389B9500E427A4 /* Combined.storyboard */; };
 		825E1C2621389C8E00E427A4 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E1C2521389C8E00E427A4 /* CombinedViewController.swift */; };
 		825E1C282138AC0F00E427A4 /* PollingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E1C272138AC0F00E427A4 /* PollingTabBarViewController.swift */; };
+		825E1C2A2138B1A900E427A4 /* VoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E1C292138B1A900E427A4 /* VoteControllerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		825E1C2321389B9500E427A4 /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
 		825E1C2521389C8E00E427A4 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
 		825E1C272138AC0F00E427A4 /* PollingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingTabBarViewController.swift; sourceTree = "<group>"; };
+		825E1C292138B1A900E427A4 /* VoteControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteControllerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				825E1C142138921A00E427A4 /* Vote.swift */,
+				825E1C292138B1A900E427A4 /* VoteControllerProtocol.swift */,
 				825E1C1A213895EA00E427A4 /* Controllers */,
 				825E1C19213895DE00E427A4 /* Stroyboards */,
 				825E1C18213895D100E427A4 /* Supporting files */,
@@ -189,6 +192,7 @@
 				825E1C172138937E00E427A4 /* VoteController.swift in Sources */,
 				825E1C152138921A00E427A4 /* Vote.swift in Sources */,
 				825E1C032138919100E427A4 /* AppDelegate.swift in Sources */,
+				825E1C2A2138B1A900E427A4 /* VoteControllerProtocol.swift in Sources */,
 				825E1C1E213897C900E427A4 /* VotingViewController.swift in Sources */,
 				825E1C2221389A5600E427A4 /* ResultsTableViewController.swift in Sources */,
 				825E1C2621389C8E00E427A4 /* CombinedViewController.swift in Sources */,
