@@ -15,7 +15,9 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
         super.viewWillAppear(animated)
         
         //Reload table view data when view is loaded
+        voteController?.sortVotesByTime()
         tableView.reloadData()
+        
     }
     
     // MARK: - Properties

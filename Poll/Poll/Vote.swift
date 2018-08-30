@@ -11,4 +11,5 @@ import Foundation
 struct Vote {
     let name: String
     let response: String
+    let timestamp = Date()
 }
