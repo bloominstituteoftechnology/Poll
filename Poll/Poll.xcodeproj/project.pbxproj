@@ -20,6 +20,7 @@
 		D83B015221389D9400BB8A64 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83B015121389D9400BB8A64 /* Combined.storyboard */; };
 		D83B015421389E7000BB8A64 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83B015321389E7000BB8A64 /* CombinedViewController.swift */; };
 		D83B015621389F7300BB8A64 /* PollingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83B015521389F7300BB8A64 /* PollingTabBarViewController.swift */; };
+		D83B015821389FE600BB8A64 /* VoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83B015721389FE600BB8A64 /* VoteControllerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D83B015121389D9400BB8A64 /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
 		D83B015321389E7000BB8A64 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
 		D83B015521389F7300BB8A64 /* PollingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingTabBarViewController.swift; sourceTree = "<group>"; };
+		D83B015721389FE600BB8A64 /* VoteControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteControllerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				D83B0131213894E600BB8A64 /* AppDelegate.swift */,
 				D83B0135213894E600BB8A64 /* Main.storyboard */,
 				D83B015521389F7300BB8A64 /* PollingTabBarViewController.swift */,
+				D83B015721389FE600BB8A64 /* VoteControllerProtocol.swift */,
 				D83B014921389B6100BB8A64 /* Voting.storyboard */,
 				D83B014D21389CC600BB8A64 /* Results.storyboard */,
 				D83B015121389D9400BB8A64 /* Combined.storyboard */,
@@ -165,6 +168,7 @@
 				D83B01482138968A00BB8A64 /* VoteController.swift in Sources */,
 				D83B01462138953200BB8A64 /* Vote.swift in Sources */,
 				D83B0132213894E600BB8A64 /* AppDelegate.swift in Sources */,
+				D83B015821389FE600BB8A64 /* VoteControllerProtocol.swift in Sources */,
 				D83B014C21389C3900BB8A64 /* VotingViewController.swift in Sources */,
 				D83B015021389D6B00BB8A64 /* ResultsTableViewController.swift in Sources */,
 				D83B015421389E7000BB8A64 /* CombinedViewController.swift in Sources */,
@@ -315,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9AL899TPVP;
 				INFOPLIST_FILE = Poll/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9AL899TPVP;
 				INFOPLIST_FILE = Poll/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

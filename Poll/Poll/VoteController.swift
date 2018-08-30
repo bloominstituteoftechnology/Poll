@@ -17,6 +17,7 @@ class VoteController{
         let vote = Vote(name: voter, response: response)
         
         votes.append(vote)
+        
     }
     
     

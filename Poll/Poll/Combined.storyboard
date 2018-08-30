@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Combined View Controller-->
+        <!--Combined-->
         <scene sceneID="s1j-Ag-hU2">
             <objects>
                 <viewController id="UMc-r5-RJE" customClass="CombinedViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,16 +19,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9h-SD-YCF">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="285"/>
                                 <connections>
-                                    <segue destination="hsO-Hb-sjL" kind="embed" id="BB2-8K-Ntj"/>
+                                    <segue destination="hsO-Hb-sjL" kind="embed" identifier="VotingSegue" id="BB2-8K-Ntj"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h8b-BW-qn3">
                                 <rect key="frame" x="0.0" y="334" width="375" height="333"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="TmT-7J-KLV" kind="embed" id="W2d-hN-6TC"/>
+                                    <segue destination="TmT-7J-KLV" kind="embed" identifier="ResultsSegue" id="W2d-hN-6TC"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -41,6 +41,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cad-he-gqT"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Combined" id="poV-nP-0Lg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JHD-fR-v7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
