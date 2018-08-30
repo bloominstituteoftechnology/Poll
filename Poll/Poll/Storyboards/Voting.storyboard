@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,30 +19,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your favorite color?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXI-B3-570">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your favorite color?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXI-B3-570">
                                 <rect key="frame" x="83" y="47" width="209" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-eI-Hl1">
-                                <rect key="frame" x="16" y="186" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-eI-Hl1">
+                                <rect key="frame" x="16" y="132" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your response:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wnH-Kj-iZL">
-                                <rect key="frame" x="16" y="224" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your response:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wnH-Kj-iZL">
+                                <rect key="frame" x="16" y="170" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4a-Vg-0sw">
-                                <rect key="frame" x="16" y="262" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4a-Vg-0sw">
+                                <rect key="frame" x="16" y="208" width="343" height="22"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submitResponse:" destination="ucf-BH-Ggv" eventType="touchUpInside" id="eoN-5x-hkq"/>
@@ -49,6 +46,19 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wnH-Kj-iZL" firstAttribute="leading" secondItem="O4a-Vg-0sw" secondAttribute="leading" id="2O9-bf-DJ9"/>
+                            <constraint firstItem="SXI-B3-570" firstAttribute="centerX" secondItem="OvE-eI-Hl1" secondAttribute="centerX" id="5BA-xb-ubK"/>
+                            <constraint firstItem="OvE-eI-Hl1" firstAttribute="trailing" secondItem="wnH-Kj-iZL" secondAttribute="trailing" id="EMV-2c-eok"/>
+                            <constraint firstItem="OvE-eI-Hl1" firstAttribute="leading" secondItem="dg5-t6-HbB" secondAttribute="leadingMargin" id="G8a-q6-jxR"/>
+                            <constraint firstItem="wnH-Kj-iZL" firstAttribute="trailing" secondItem="O4a-Vg-0sw" secondAttribute="trailing" id="JOJ-PC-gRS"/>
+                            <constraint firstItem="kIc-XI-03l" firstAttribute="bottom" secondItem="O4a-Vg-0sw" secondAttribute="bottom" constant="437" id="LWZ-DY-SRb"/>
+                            <constraint firstItem="wnH-Kj-iZL" firstAttribute="top" secondItem="OvE-eI-Hl1" secondAttribute="bottom" constant="8" symbolic="YES" id="UZP-sq-KCp"/>
+                            <constraint firstItem="SXI-B3-570" firstAttribute="top" secondItem="kIc-XI-03l" secondAttribute="top" constant="27" id="kaE-gE-Zpe"/>
+                            <constraint firstItem="OvE-eI-Hl1" firstAttribute="leading" secondItem="wnH-Kj-iZL" secondAttribute="leading" id="sOb-qK-xU6"/>
+                            <constraint firstItem="O4a-Vg-0sw" firstAttribute="top" secondItem="wnH-Kj-iZL" secondAttribute="bottom" constant="8" symbolic="YES" id="wja-sl-nIV"/>
+                            <constraint firstItem="OvE-eI-Hl1" firstAttribute="trailing" secondItem="dg5-t6-HbB" secondAttribute="trailingMargin" id="wk3-gN-cDS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kIc-XI-03l"/>
                     </view>
                     <connections>

@@ -22,14 +22,19 @@ class CombinedViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "VotingView" {
+            guard let votingVC = segue.destination as? VoteControllerProtocol else {return}
+            votingVC.voteController = voteController
+        } else if segue.identifier == "ResultsTable" {
+            guard let resultsTVC = segue.destination as? VoteControllerProtocol else {return}
+            resultsTVC.voteController = voteController
+        }
     }
-    */
-
+    
+    var voteController: VoteController?
 }
