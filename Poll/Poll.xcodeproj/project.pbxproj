@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		825E1C032138919100E427A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E1C022138919100E427A4 /* AppDelegate.swift */; };
-		825E1C052138919100E427A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E1C042138919100E427A4 /* ViewController.swift */; };
 		825E1C082138919100E427A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825E1C062138919100E427A4 /* Main.storyboard */; };
 		825E1C0A2138919200E427A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 825E1C092138919200E427A4 /* Assets.xcassets */; };
 		825E1C0D2138919200E427A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825E1C0B2138919200E427A4 /* LaunchScreen.storyboard */; };
 		825E1C152138921A00E427A4 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E1C142138921A00E427A4 /* Vote.swift */; };
 		825E1C172138937E00E427A4 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E1C162138937E00E427A4 /* VoteController.swift */; };
+		825E1C1C2138969300E427A4 /* Voting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825E1C1B2138969300E427A4 /* Voting.storyboard */; };
+		825E1C1E213897C900E427A4 /* VotingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E1C1D213897C900E427A4 /* VotingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		825E1BFF2138919100E427A4 /* Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		825E1C022138919100E427A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		825E1C042138919100E427A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		825E1C072138919100E427A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		825E1C092138919200E427A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		825E1C0C2138919200E427A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		825E1C0E2138919200E427A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		825E1C142138921A00E427A4 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
 		825E1C162138937E00E427A4 /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
+		825E1C1B2138969300E427A4 /* Voting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Voting.storyboard; sourceTree = "<group>"; };
+		825E1C1D213897C900E427A4 /* VotingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,41 @@
 		825E1C012138919100E427A4 /* Poll */ = {
 			isa = PBXGroup;
 			children = (
-				825E1C022138919100E427A4 /* AppDelegate.swift */,
-				825E1C042138919100E427A4 /* ViewController.swift */,
-				825E1C062138919100E427A4 /* Main.storyboard */,
 				825E1C142138921A00E427A4 /* Vote.swift */,
-				825E1C162138937E00E427A4 /* VoteController.swift */,
-				825E1C092138919200E427A4 /* Assets.xcassets */,
-				825E1C0B2138919200E427A4 /* LaunchScreen.storyboard */,
-				825E1C0E2138919200E427A4 /* Info.plist */,
+				825E1C1A213895EA00E427A4 /* Controllers */,
+				825E1C19213895DE00E427A4 /* Stroyboards */,
+				825E1C18213895D100E427A4 /* Supporting files */,
 			);
 			path = Poll;
+			sourceTree = "<group>";
+		};
+		825E1C18213895D100E427A4 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				825E1C022138919100E427A4 /* AppDelegate.swift */,
+				825E1C092138919200E427A4 /* Assets.xcassets */,
+				825E1C0E2138919200E427A4 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		825E1C19213895DE00E427A4 /* Stroyboards */ = {
+			isa = PBXGroup;
+			children = (
+				825E1C062138919100E427A4 /* Main.storyboard */,
+				825E1C1B2138969300E427A4 /* Voting.storyboard */,
+				825E1C0B2138919200E427A4 /* LaunchScreen.storyboard */,
+			);
+			path = Stroyboards;
+			sourceTree = "<group>";
+		};
+		825E1C1A213895EA00E427A4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				825E1C162138937E00E427A4 /* VoteController.swift */,
+				825E1C1D213897C900E427A4 /* VotingViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +158,7 @@
 				825E1C0D2138919200E427A4 /* LaunchScreen.storyboard in Resources */,
 				825E1C0A2138919200E427A4 /* Assets.xcassets in Resources */,
 				825E1C082138919100E427A4 /* Main.storyboard in Resources */,
+				825E1C1C2138969300E427A4 /* Voting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				825E1C052138919100E427A4 /* ViewController.swift in Sources */,
 				825E1C172138937E00E427A4 /* VoteController.swift in Sources */,
 				825E1C152138921A00E427A4 /* Vote.swift in Sources */,
 				825E1C032138919100E427A4 /* AppDelegate.swift in Sources */,
+				825E1C1E213897C900E427A4 /* VotingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KK26JKU2YA;
-				INFOPLIST_FILE = Poll/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Poll/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KK26JKU2YA;
-				INFOPLIST_FILE = Poll/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Poll/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
