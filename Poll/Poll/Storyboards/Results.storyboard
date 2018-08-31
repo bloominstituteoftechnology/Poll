@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Results Table View Controller-->
+        <!--Results-->
         <scene sceneID="Nzw-4K-oz7">
             <objects>
                 <tableViewController id="RDP-dr-xjr" customClass="ResultsTableViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,6 +48,8 @@
                             <outlet property="delegate" destination="RDP-dr-xjr" id="cSh-39-PrD"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Results" id="q80-pC-APg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpB-fZ-jXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Voting View Controller-->
+        <!--Voting-->
         <scene sceneID="O1A-yD-rnf">
             <objects>
                 <viewController id="ucf-BH-Ggv" customClass="VotingViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
@@ -64,6 +64,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kIc-XI-03l"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Voting" id="Ayo-qy-vbC"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="nameTextField" destination="OvE-eI-Hl1" id="Xl3-Cq-TAj"/>
                         <outlet property="responseTextField" destination="wnH-Kj-iZL" id="qLk-dj-Kzt"/>
