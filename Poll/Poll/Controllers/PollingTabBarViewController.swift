@@ -14,7 +14,6 @@ class PollingTabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         passVoteControllerToChildViewController()
-
     }
 
     let voteController = VoteController()
@@ -31,15 +30,4 @@ class PollingTabBarViewController: UITabBarController {
             }
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
