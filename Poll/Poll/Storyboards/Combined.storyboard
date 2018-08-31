@@ -18,13 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1YB-ZP-4XT">
-                                <rect key="frame" x="10" y="342" width="355" height="325"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YB-ZP-4XT">
+                                <rect key="frame" x="10" y="371" width="355" height="296"/>
                                 <connections>
                                     <segue destination="sLI-01-GCG" kind="embed" identifier="ResultsTable" id="Q4Q-ps-kah"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xd6-8e-YGc">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xd6-8e-YGc">
                                 <rect key="frame" x="10" y="0.0" width="355" height="334"/>
                                 <connections>
                                     <segue destination="8eh-vq-HaT" kind="embed" identifier="VotingView" id="vdP-ig-IHt"/>
@@ -33,14 +33,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xd6-8e-YGc" firstAttribute="trailing" secondItem="1YB-ZP-4XT" secondAttribute="trailing" id="2um-T7-WmS"/>
-                            <constraint firstItem="xd6-8e-YGc" firstAttribute="leading" secondItem="BOs-ga-nvd" secondAttribute="leading" id="6Sf-KO-0Gd"/>
-                            <constraint firstItem="xd6-8e-YGc" firstAttribute="leading" secondItem="1YB-ZP-4XT" secondAttribute="leading" id="8Ql-fl-e2t"/>
-                            <constraint firstItem="1YB-ZP-4XT" firstAttribute="top" secondItem="BOs-ga-nvd" secondAttribute="top" constant="342" id="AYL-gL-7dC"/>
-                            <constraint firstAttribute="trailing" secondItem="xd6-8e-YGc" secondAttribute="trailing" id="Fko-BR-mRw"/>
-                            <constraint firstItem="1YB-ZP-4XT" firstAttribute="top" secondItem="xd6-8e-YGc" secondAttribute="bottom" constant="8" symbolic="YES" id="Qdb-Ju-B0O"/>
-                            <constraint firstItem="1YB-ZP-4XT" firstAttribute="bottom" secondItem="E5o-c1-DB1" secondAttribute="bottom" id="Tqk-H5-S0E"/>
-                            <constraint firstItem="xd6-8e-YGc" firstAttribute="top" secondItem="BOs-ga-nvd" secondAttribute="top" id="jWx-oy-ViX"/>
+                            <constraint firstItem="1YB-ZP-4XT" firstAttribute="bottom" secondItem="E5o-c1-DB1" secondAttribute="bottom" id="5tA-yh-zs7"/>
+                            <constraint firstItem="xd6-8e-YGc" firstAttribute="centerX" secondItem="BOs-ga-nvd" secondAttribute="centerX" id="BXY-FM-SMF"/>
+                            <constraint firstItem="xd6-8e-YGc" firstAttribute="top" secondItem="BOs-ga-nvd" secondAttribute="top" id="LJb-kR-DV2"/>
+                            <constraint firstItem="1YB-ZP-4XT" firstAttribute="top" secondItem="BOs-ga-nvd" secondAttribute="top" constant="371" id="XMT-Ud-K6u"/>
+                            <constraint firstItem="xd6-8e-YGc" firstAttribute="leading" secondItem="1YB-ZP-4XT" secondAttribute="leading" id="cBM-q5-HDk"/>
+                            <constraint firstItem="xd6-8e-YGc" firstAttribute="trailing" secondItem="1YB-ZP-4XT" secondAttribute="trailing" id="vXV-xB-ae5"/>
+                            <constraint firstItem="1YB-ZP-4XT" firstAttribute="top" secondItem="xd6-8e-YGc" secondAttribute="bottom" constant="37" id="wP4-fZ-v0E"/>
+                            <constraint firstItem="xd6-8e-YGc" firstAttribute="leading" secondItem="E5o-c1-DB1" secondAttribute="leading" constant="10" id="y84-Hp-aZg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E5o-c1-DB1"/>
                     </view>

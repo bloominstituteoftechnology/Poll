@@ -9,6 +9,7 @@
 import Foundation
 
 class VoteController {
+    
     var votes: [Vote] = []
     
     func createVote(name: String, response: String) {

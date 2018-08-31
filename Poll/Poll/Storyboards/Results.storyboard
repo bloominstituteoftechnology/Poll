@@ -48,7 +48,6 @@
                             <outlet property="delegate" destination="RDP-dr-xjr" id="cSh-39-PrD"/>
                         </connections>
                     </tableView>
-                    <size key="freeformSize" width="375" height="667"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpB-fZ-jXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -32,7 +32,7 @@
         <scene sceneID="n25-ve-JXh">
             <objects>
                 <viewControllerPlaceholder storyboardName="Voting" id="Wr0-gg-4Ek" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Voting" id="PRz-rP-7sq"/>
+                    <tabBarItem key="tabBarItem" title="Voting" image="1517-plus" id="PRz-rP-7sq"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZZ-ST-bLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,4 +59,7 @@
             <point key="canvasLocation" x="323" y="487"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1517-plus" width="21" height="21"/>
+    </resources>
 </document>
