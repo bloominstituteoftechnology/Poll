@@ -25,6 +25,11 @@ class CombinedViewController: UIViewController, VoteControllerProtocol {
             
         }
         
+        if segue.identifier == "ResultsView" {
+            guard let resultsVC = segue.destination as? VoteControllerProtocol else { return }
+            resultsVC.voteController = voteController
+        }
+        
     }
 
 
