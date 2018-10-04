@@ -12,6 +12,8 @@
 		117DA8442166A922001743D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DA8422166A922001743D4 /* Main.storyboard */; };
 		117DA8462166A923001743D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117DA8452166A923001743D4 /* Assets.xcassets */; };
 		117DA8492166A923001743D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DA8472166A923001743D4 /* LaunchScreen.storyboard */; };
+		117DA8512166A9FB001743D4 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DA8502166A9FB001743D4 /* Vote.swift */; };
+		117DA8532166AA40001743D4 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DA8522166AA40001743D4 /* VoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		117DA8452166A923001743D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		117DA8482166A923001743D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		117DA84A2166A923001743D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		117DA8502166A9FB001743D4 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		117DA8522166AA40001743D4 /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				117DA83E2166A922001743D4 /* AppDelegate.swift */,
 				117DA8402166A922001743D4 /* ViewController.swift */,
 				117DA8422166A922001743D4 /* Main.storyboard */,
+				117DA8502166A9FB001743D4 /* Vote.swift */,
+				117DA8522166AA40001743D4 /* VoteController.swift */,
 				117DA8452166A923001743D4 /* Assets.xcassets */,
 				117DA8472166A923001743D4 /* LaunchScreen.storyboard */,
 				117DA84A2166A923001743D4 /* Info.plist */,
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				117DA8412166A922001743D4 /* ViewController.swift in Sources */,
+				117DA8532166AA40001743D4 /* VoteController.swift in Sources */,
+				117DA8512166A9FB001743D4 /* Vote.swift in Sources */,
 				117DA83F2166A922001743D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
