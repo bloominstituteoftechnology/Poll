@@ -12,9 +12,11 @@ Poll is an application where a user can submit a vote on a poll of some sort (fo
 
 This application requires you to implement concepts such as using multiple storyboards, container views, tab bar controllers, and custom protocols.
 
-Watch the screen recording below in order to know what the final product should look like and behave:
+Watch the screen recording below in order to know how final product should look and behave:
 
 ![](https://user-images.githubusercontent.com/16965587/43245136-71d37ff6-906a-11e8-9636-a1167ea96915.gif)
+
+The app has three tabs: Voting, Results, and Combined. The Voting tab allows the user to submit a response to the poll. The Results tab displays a table view with submitted results. The Combined tab shows a view controller that uses view controller containment to display both the vote submission interface and the results table view on a single screen.
 
 ## Instructions
 
@@ -22,12 +24,13 @@ Please fork and clone this repository.
 
 ## Part 1 - Model and Model Controller
 
-We're going to create a model object that represents a vote, with the name of the person who voted, and their response.
+Create a model object that represents a vote, with the name of the person who voted, and their response.
 
 1. Create a new Swift file called "Vote.swift"
-2. Create a `Vote` struct with `name` and `response` constants
+2. Create a `Vote` class with `name` and `response` properties
+3. Create an initializer for `Vote`. It should take `name` and `response` values.
 
-We need to make a model controller for this `Vote` struct as well.
+Create a model controller for `Vote`s:
 
 1. Make a "VoteController.swift" file and create a `VoteController` class in it.
 2. Add a `votes` property that is of type `[Vote]`. Set its initial value to an empty array
@@ -139,8 +142,12 @@ At this point, the application should work. Note that in the `CombinedViewContro
 
 ## Going Further
 
+If you finish early or want to push yourself, here are some additional goals:
+
+- Instead of putting the `UITableViewDataSource` and `UITableViewDelegate` methods in the `ResultsTableViewController`, implement a separate, single-responsibility data source class called `ResultsModel` or `ResultsDataSource`. Remove `ResultsTableViewController`, and instead use a plain `UITableViewController` here. How will you pass data (ie. the `VoteController` and `ResultsModel`) to this table view controller?
+
 - Change your `Vote` model object to have a third property called `timestamp`. Its type should be `Date`. This will allow you to sort the votes in chronological order. Try to implement this.
 
 - Change the table view's prototype cell to be a custom cell. Make a label for each property on the `Vote` model. If you did the previous challenge, make sure that includes showing the timestamp. As a sub-challenge, figure out how to format the timestamp into something that is more human-readable.
 
-- As stated above, the table view in the combined view controller will not reload when a new vote is made from that same view controller without going to a new tab and coming back. Try to get this to work. (hint: a possible solution would be to use the `NotificationCenter` API)
+- As stated above, the table view in the combined view controller will not reload when a new vote is made from that same view controller without going to a new tab and coming back. Try to get this to work. (hint: There are multiple valid ways to do this. A custom delegate protocol and delegate property would work, as would use of the [`NotificationCenter` API](https://developer.apple.com/documentation/foundation/notificationcenter).)
