@@ -24,7 +24,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfQ-xS-eqG">
-                                <rect key="frame" x="8" y="359" width="359" height="300"/>
+                                <rect key="frame" x="8" y="310" width="359" height="300"/>
                                 <connections>
                                     <segue destination="4Pn-Et-YL7" kind="embed" identifier="resultsSegue" id="zPy-ib-APQ"/>
                                 </connections>
@@ -43,6 +43,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="b7K-xr-eWE"/>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yzx-Kl-KEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

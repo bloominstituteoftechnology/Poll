@@ -12,7 +12,7 @@
         <scene sceneID="84L-Vw-l7a">
             <objects>
                 <viewControllerPlaceholder storyboardName="Combined" id="S5W-YM-ly1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="XyU-oZ-xU9"/>
+                    <tabBarItem key="tabBarItem" title="Combined" id="XyU-oZ-xU9"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yDU-wd-eyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -29,8 +29,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="i6d-zp-Tau" kind="relationship" relationship="viewControllers" id="k6p-Dz-7A6"/>
-                        <segue destination="S5W-YM-ly1" kind="relationship" relationship="viewControllers" id="HhV-gH-In9"/>
                         <segue destination="n62-Od-4W4" kind="relationship" relationship="viewControllers" id="mPv-Lr-cHw"/>
+                        <segue destination="S5W-YM-ly1" kind="relationship" relationship="viewControllers" id="HhV-gH-In9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOp-dZ-3dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -41,7 +41,7 @@
         <scene sceneID="3iQ-dv-AE2">
             <objects>
                 <viewControllerPlaceholder storyboardName="Results" id="n62-Od-4W4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="arf-Of-rYY"/>
+                    <tabBarItem key="tabBarItem" title="Results" id="arf-Of-rYY"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HC4-fH-Lw0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +51,7 @@
         <scene sceneID="b1t-N3-Y86">
             <objects>
                 <viewControllerPlaceholder storyboardName="Voting" id="i6d-zp-Tau" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="pFJ-vQ-gHi"/>
+                    <tabBarItem key="tabBarItem" title="Voting" id="pFJ-vQ-gHi"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bP-fr-vOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

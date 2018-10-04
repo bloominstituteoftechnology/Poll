@@ -64,6 +64,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QBZ-27-B0f"/>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="nameField" destination="BB3-dc-40S" id="QVu-tY-PaP"/>
                         <outlet property="responseField" destination="wbV-6N-Nxs" id="e3s-oC-FK4"/>

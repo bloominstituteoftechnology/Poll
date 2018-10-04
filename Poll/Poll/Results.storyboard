@@ -47,6 +47,7 @@
                             <outlet property="delegate" destination="0By-kK-sSf" id="QdO-tm-ct7"/>
                         </connections>
                     </tableView>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ncm-4a-7U0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
