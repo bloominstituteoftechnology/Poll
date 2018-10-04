@@ -8,24 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		117DA83F2166A922001743D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DA83E2166A922001743D4 /* AppDelegate.swift */; };
-		117DA8412166A922001743D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DA8402166A922001743D4 /* ViewController.swift */; };
 		117DA8442166A922001743D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DA8422166A922001743D4 /* Main.storyboard */; };
 		117DA8462166A923001743D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117DA8452166A923001743D4 /* Assets.xcassets */; };
 		117DA8492166A923001743D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DA8472166A923001743D4 /* LaunchScreen.storyboard */; };
 		117DA8512166A9FB001743D4 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DA8502166A9FB001743D4 /* Vote.swift */; };
 		117DA8532166AA40001743D4 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DA8522166AA40001743D4 /* VoteController.swift */; };
+		117DA8552166AB06001743D4 /* Voting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DA8542166AB06001743D4 /* Voting.storyboard */; };
+		117DA8572166ABA4001743D4 /* VotingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DA8562166ABA4001743D4 /* VotingViewController.swift */; };
+		117DA8592166AC1B001743D4 /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DA8582166AC1B001743D4 /* Results.storyboard */; };
+		117DA85B2166AC54001743D4 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DA85A2166AC54001743D4 /* ResultsTableViewController.swift */; };
+		117DA85D2166AC80001743D4 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DA85C2166AC80001743D4 /* Combined.storyboard */; };
+		117DA85F2166AD8F001743D4 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DA85E2166AD8F001743D4 /* CombinedViewController.swift */; };
+		117DA8612166B105001743D4 /* PollingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DA8602166B105001743D4 /* PollingTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		117DA83B2166A922001743D4 /* Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		117DA83E2166A922001743D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		117DA8402166A922001743D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		117DA8432166A922001743D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		117DA8452166A923001743D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		117DA8482166A923001743D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		117DA84A2166A923001743D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		117DA8502166A9FB001743D4 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
 		117DA8522166AA40001743D4 /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
+		117DA8542166AB06001743D4 /* Voting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Voting.storyboard; sourceTree = "<group>"; };
+		117DA8562166ABA4001743D4 /* VotingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingViewController.swift; sourceTree = "<group>"; };
+		117DA8582166AC1B001743D4 /* Results.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
+		117DA85A2166AC54001743D4 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
+		117DA85C2166AC80001743D4 /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
+		117DA85E2166AD8F001743D4 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
+		117DA8602166B105001743D4 /* PollingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +71,14 @@
 			isa = PBXGroup;
 			children = (
 				117DA83E2166A922001743D4 /* AppDelegate.swift */,
-				117DA8402166A922001743D4 /* ViewController.swift */,
 				117DA8422166A922001743D4 /* Main.storyboard */,
+				117DA8602166B105001743D4 /* PollingTabBarViewController.swift */,
+				117DA8542166AB06001743D4 /* Voting.storyboard */,
+				117DA8562166ABA4001743D4 /* VotingViewController.swift */,
+				117DA8582166AC1B001743D4 /* Results.storyboard */,
+				117DA85C2166AC80001743D4 /* Combined.storyboard */,
+				117DA85E2166AD8F001743D4 /* CombinedViewController.swift */,
+				117DA85A2166AC54001743D4 /* ResultsTableViewController.swift */,
 				117DA8502166A9FB001743D4 /* Vote.swift */,
 				117DA8522166AA40001743D4 /* VoteController.swift */,
 				117DA8452166A923001743D4 /* Assets.xcassets */,
@@ -129,8 +147,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				117DA8492166A923001743D4 /* LaunchScreen.storyboard in Resources */,
+				117DA8592166AC1B001743D4 /* Results.storyboard in Resources */,
 				117DA8462166A923001743D4 /* Assets.xcassets in Resources */,
 				117DA8442166A922001743D4 /* Main.storyboard in Resources */,
+				117DA8552166AB06001743D4 /* Voting.storyboard in Resources */,
+				117DA85D2166AC80001743D4 /* Combined.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				117DA8412166A922001743D4 /* ViewController.swift in Sources */,
+				117DA85B2166AC54001743D4 /* ResultsTableViewController.swift in Sources */,
+				117DA85F2166AD8F001743D4 /* CombinedViewController.swift in Sources */,
 				117DA8532166AA40001743D4 /* VoteController.swift in Sources */,
 				117DA8512166A9FB001743D4 /* Vote.swift in Sources */,
 				117DA83F2166A922001743D4 /* AppDelegate.swift in Sources */,
+				117DA8572166ABA4001743D4 /* VotingViewController.swift in Sources */,
+				117DA8612166B105001743D4 /* PollingTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
