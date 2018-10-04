@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ResultsTableViewController: UITableViewController {
+class ResultsTableViewController: UITableViewController, VoteControllerProtocol {
+    var voteController: VoteController?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,10 +31,9 @@ class ResultsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return voteController?.votes.count ?? 0
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
@@ -40,7 +41,7 @@ class ResultsTableViewController: UITableViewController {
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
