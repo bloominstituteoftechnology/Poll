@@ -13,6 +13,7 @@
 		C30D24CA2166D1BA00704E59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30D24C92166D1BA00704E59 /* Assets.xcassets */; };
 		C30D24CD2166D1BA00704E59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30D24CB2166D1BA00704E59 /* LaunchScreen.storyboard */; };
 		C30D24D52166D77600704E59 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D24D42166D77600704E59 /* Vote.swift */; };
+		C30D24D72166D88000704E59 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D24D62166D88000704E59 /* VoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C30D24CC2166D1BA00704E59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C30D24CE2166D1BA00704E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C30D24D42166D77600704E59 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		C30D24D62166D88000704E59 /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		C30D24C12166D1B700704E59 /* Polling App */ = {
 			isa = PBXGroup;
 			children = (
-				C30D24C22166D1B700704E59 /* AppDelegate.swift */,
-				C30D24C42166D1B700704E59 /* ViewController.swift */,
-				C30D24C62166D1B700704E59 /* Main.storyboard */,
+				C30D24D82166D9B300704E59 /* Model */,
+				C30D24DB2166D9DF00704E59 /* View Controllers */,
+				C30D24D92166D9C100704E59 /* Storyboards */,
+				C30D24DA2166D9CD00704E59 /* Resources */,
+			);
+			path = "Polling App";
+			sourceTree = "<group>";
+		};
+		C30D24D82166D9B300704E59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C30D24D62166D88000704E59 /* VoteController.swift */,
 				C30D24D42166D77600704E59 /* Vote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C30D24D92166D9C100704E59 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C30D24C62166D1B700704E59 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C30D24DA2166D9CD00704E59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C30D24C22166D1B700704E59 /* AppDelegate.swift */,
 				C30D24C92166D1BA00704E59 /* Assets.xcassets */,
 				C30D24CB2166D1BA00704E59 /* LaunchScreen.storyboard */,
 				C30D24CE2166D1BA00704E59 /* Info.plist */,
 			);
-			path = "Polling App";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C30D24DB2166D9DF00704E59 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C30D24C42166D1B700704E59 /* ViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30D24C52166D1B700704E59 /* ViewController.swift in Sources */,
+				C30D24D72166D88000704E59 /* VoteController.swift in Sources */,
 				C30D24D52166D77600704E59 /* Vote.swift in Sources */,
 				C30D24C32166D1B700704E59 /* AppDelegate.swift in Sources */,
 			);
@@ -288,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JG93VFG2G;
-				INFOPLIST_FILE = "Polling App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Polling App/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JG93VFG2G;
-				INFOPLIST_FILE = "Polling App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Polling App/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
