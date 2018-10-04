@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Results Table View Controller-->
+        <!--Results-->
         <scene sceneID="G6j-y1-aV1">
             <objects>
-                <tableViewController id="0By-kK-sSf" customClass="ResultsTableViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Results" id="0By-kK-sSf" customClass="ResultsTableViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kb1-Fx-8jq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

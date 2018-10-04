@@ -16,7 +16,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yDU-wd-eyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-75" y="180"/>
+            <point key="canvasLocation" x="-75" y="132"/>
         </scene>
         <!--Polling Tab Bar View Controller-->
         <scene sceneID="JkW-Hj-5pO">
@@ -55,7 +55,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bP-fr-vOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-919" y="654"/>
+            <point key="canvasLocation" x="-1074" y="654"/>
         </scene>
     </scenes>
 </document>

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Voting View Controller-->
+        <!--Voting-->
         <scene sceneID="5WX-QV-PWL">
             <objects>
-                <viewController id="rSS-mp-UDG" customClass="VotingViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Voting" id="rSS-mp-UDG" customClass="VotingViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c8g-DT-wFY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

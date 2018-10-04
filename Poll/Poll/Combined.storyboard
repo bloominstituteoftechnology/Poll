@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Combined View Controller-->
+        <!--Combined-->
         <scene sceneID="6lj-Ci-uJY">
             <objects>
-                <viewController id="D9T-Io-XYY" customClass="CombinedViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Combined" id="D9T-Io-XYY" customClass="CombinedViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D0J-yw-HlK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
