@@ -19,6 +19,7 @@
 		39BEDBD42166C79800052910 /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BEDBD32166C79800052910 /* Results.storyboard */; };
 		39BEDBD62166CB3B00052910 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BEDBD52166CB3B00052910 /* ResultsTableViewController.swift */; };
 		39BEDBD82166CD4400052910 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BEDBD72166CD4400052910 /* Combined.storyboard */; };
+		39BEDBDA2166D63100052910 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BEDBD92166D63100052910 /* CombinedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		39BEDBD32166C79800052910 /* Results.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
 		39BEDBD52166CB3B00052910 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
 		39BEDBD72166CD4400052910 /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
+		39BEDBD92166D63100052910 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				39BEDBCF2166B8D100052910 /* Voting.storyboard */,
 				39BEDBD32166C79800052910 /* Results.storyboard */,
 				39BEDBD72166CD4400052910 /* Combined.storyboard */,
+				39BEDBD92166D63100052910 /* CombinedViewController.swift */,
 				39BEDBD52166CB3B00052910 /* ResultsTableViewController.swift */,
 				39BEDBD12166C32300052910 /* VotingViewController.swift */,
 				39BEDBBB2166AF7F00052910 /* ViewController.swift */,
@@ -161,6 +164,7 @@
 			files = (
 				39BEDBD62166CB3B00052910 /* ResultsTableViewController.swift in Sources */,
 				39BEDBBC2166AF7F00052910 /* ViewController.swift in Sources */,
+				39BEDBDA2166D63100052910 /* CombinedViewController.swift in Sources */,
 				39BEDBCE2166B22500052910 /* VoteController.swift in Sources */,
 				39BEDBCC2166B02100052910 /* Vote.swift in Sources */,
 				39BEDBBA2166AF7F00052910 /* AppDelegate.swift in Sources */,
