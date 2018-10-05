@@ -35,6 +35,9 @@
                                 <rect key="frame" x="183" y="485" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitTapped:" destination="vWp-aA-rXI" eventType="touchUpInside" id="Tvr-Rc-NG2"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jYH-cY-LfM" userLabel="nameTextField">
                                 <rect key="frame" x="36" y="409" width="343" height="30"/>
@@ -50,7 +53,6 @@
                     <connections>
                         <outlet property="nameTextField" destination="jYH-cY-LfM" id="kLf-Ze-ctU"/>
                         <outlet property="responseTextField" destination="pNu-Gm-kWs" id="gR9-pG-kkf"/>
-                        <outlet property="submitButtonTapped" destination="AIF-F9-Cxu" id="zSC-al-61h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3SL-Wm-Knv" userLabel="First Responder" sceneMemberID="firstResponder"/>
