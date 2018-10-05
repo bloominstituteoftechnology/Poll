@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CFF762A214212480026B153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFF7629214212480026B153 /* AppDelegate.swift */; };
+		1CFF762F214212480026B153 /* Voting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFF762D214212480026B153 /* Voting.storyboard */; };
+		1CFF7631214212490026B153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CFF7630214212490026B153 /* Assets.xcassets */; };
+		1CFF7634214212490026B153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFF7632214212490026B153 /* LaunchScreen.storyboard */; };
+		1CFF763C214212E70026B153 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFF763B214212E70026B153 /* Vote.swift */; };
+		1CFF763F214213090026B153 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFF763E214213090026B153 /* VoteController.swift */; };
+		1CFF764421421B2F0026B153 /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFF764321421B2F0026B153 /* Results.storyboard */; };
+		1CFF76462142202F0026B153 /* VotingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFF76452142202F0026B153 /* VotingViewController.swift */; };
+		1CFF7648214221420026B153 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFF7647214221420026B153 /* ResultsTableViewController.swift */; };
+		1CFF764A214221760026B153 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFF7649214221760026B153 /* Combined.storyboard */; };
+		1CFF764C2142232C0026B153 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFF764B2142232C0026B153 /* CombinedViewController.swift */; };
+		1CFF764E2142238C0026B153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFF764D2142238C0026B153 /* Main.storyboard */; };
+		1CFF765021422B780026B153 /* PollingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFF764F21422B780026B153 /* PollingTabBarViewController.swift */; };
+		1CFF765221422BF70026B153 /* VoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFF765121422BF70026B153 /* VoteControllerProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CFF7626214212480026B153 /* Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CFF7629214212480026B153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CFF762E214212480026B153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Voting.storyboard; sourceTree = "<group>"; };
+		1CFF7630214212490026B153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CFF7633214212490026B153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CFF7635214212490026B153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CFF763B214212E70026B153 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		1CFF763E214213090026B153 /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
+		1CFF764321421B2F0026B153 /* Results.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
+		1CFF76452142202F0026B153 /* VotingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingViewController.swift; sourceTree = "<group>"; };
+		1CFF7647214221420026B153 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
+		1CFF7649214221760026B153 /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
+		1CFF764B2142232C0026B153 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
+		1CFF764D2142238C0026B153 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1CFF764F21422B780026B153 /* PollingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingTabBarViewController.swift; sourceTree = "<group>"; };
+		1CFF765121422BF70026B153 /* VoteControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteControllerProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CFF7623214212480026B153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CFF761D214212480026B153 = {
+			isa = PBXGroup;
+			children = (
+				1CFF7628214212480026B153 /* Poll */,
+				1CFF7627214212480026B153 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CFF7627214212480026B153 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CFF7626214212480026B153 /* Poll.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CFF7628214212480026B153 /* Poll */ = {
+			isa = PBXGroup;
+			children = (
+				1CFF7640214215650026B153 /* Resources */,
+				1CFF76412142157C0026B153 /* ViewControllers */,
+				1CFF764221421ABA0026B153 /* StoryBoards */,
+				1CFF763D214212F20026B153 /* Model */,
+				1CFF7632214212490026B153 /* LaunchScreen.storyboard */,
+				1CFF765121422BF70026B153 /* VoteControllerProtocol.swift */,
+			);
+			path = Poll;
+			sourceTree = "<group>";
+		};
+		1CFF763D214212F20026B153 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CFF763B214212E70026B153 /* Vote.swift */,
+				1CFF763E214213090026B153 /* VoteController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CFF7640214215650026B153 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1CFF7629214212480026B153 /* AppDelegate.swift */,
+				1CFF7630214212490026B153 /* Assets.xcassets */,
+				1CFF7635214212490026B153 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1CFF76412142157C0026B153 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1CFF76452142202F0026B153 /* VotingViewController.swift */,
+				1CFF7647214221420026B153 /* ResultsTableViewController.swift */,
+				1CFF764B2142232C0026B153 /* CombinedViewController.swift */,
+				1CFF764F21422B780026B153 /* PollingTabBarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1CFF764221421ABA0026B153 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				1CFF762D214212480026B153 /* Voting.storyboard */,
+				1CFF764321421B2F0026B153 /* Results.storyboard */,
+				1CFF7649214221760026B153 /* Combined.storyboard */,
+				1CFF764D2142238C0026B153 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CFF7625214212480026B153 /* Poll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CFF7638214212490026B153 /* Build configuration list for PBXNativeTarget "Poll" */;
+			buildPhases = (
+				1CFF7622214212480026B153 /* Sources */,
+				1CFF7623214212480026B153 /* Frameworks */,
+				1CFF7624214212480026B153 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Poll;
+			productName = Poll;
+			productReference = 1CFF7626214212480026B153 /* Poll.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CFF761E214212480026B153 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = RNWolter;
+				TargetAttributes = {
+					1CFF7625214212480026B153 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 1CFF7621214212480026B153 /* Build configuration list for PBXProject "Poll" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CFF761D214212480026B153;
+			productRefGroup = 1CFF7627214212480026B153 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CFF7625214212480026B153 /* Poll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CFF7624214212480026B153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFF7634214212490026B153 /* LaunchScreen.storyboard in Resources */,
+				1CFF7631214212490026B153 /* Assets.xcassets in Resources */,
+				1CFF764A214221760026B153 /* Combined.storyboard in Resources */,
+				1CFF764E2142238C0026B153 /* Main.storyboard in Resources */,
+				1CFF762F214212480026B153 /* Voting.storyboard in Resources */,
+				1CFF764421421B2F0026B153 /* Results.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CFF7622214212480026B153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFF763F214213090026B153 /* VoteController.swift in Sources */,
+				1CFF765221422BF70026B153 /* VoteControllerProtocol.swift in Sources */,
+				1CFF764C2142232C0026B153 /* CombinedViewController.swift in Sources */,
+				1CFF763C214212E70026B153 /* Vote.swift in Sources */,
+				1CFF765021422B780026B153 /* PollingTabBarViewController.swift in Sources */,
+				1CFF7648214221420026B153 /* ResultsTableViewController.swift in Sources */,
+				1CFF762A214212480026B153 /* AppDelegate.swift in Sources */,
+				1CFF76462142202F0026B153 /* VotingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1CFF762D214212480026B153 /* Voting.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CFF762E214212480026B153 /* Base */,
+			);
+			name = Voting.storyboard;
+			sourceTree = "<group>";
+		};
+		1CFF7632214212490026B153 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CFF7633214212490026B153 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CFF7636214212490026B153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CFF7637214212490026B153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CFF7639214212490026B153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Poll/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RNWolter.Poll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CFF763A214212490026B153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Poll/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RNWolter.Poll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CFF7621214212480026B153 /* Build configuration list for PBXProject "Poll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CFF7636214212490026B153 /* Debug */,
+				1CFF7637214212490026B153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CFF7638214212490026B153 /* Build configuration list for PBXNativeTarget "Poll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CFF7639214212490026B153 /* Debug */,
+				1CFF763A214212490026B153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CFF761E214212480026B153 /* Project object */;
+}
