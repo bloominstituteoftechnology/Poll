@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Combined View Controller-->
+        <!--Item-->
         <scene sceneID="ms9-gl-17x">
             <objects>
                 <viewController id="vOv-yv-3ak" customClass="CombinedViewController" customModule="Polling_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -24,7 +24,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQP-T0-JlU">
-                                <rect key="frame" x="16" y="345" width="343" height="302"/>
+                                <rect key="frame" x="16" y="345" width="343" height="273"/>
                                 <connections>
                                     <segue destination="gs0-Ej-FVG" kind="embed" identifier="ResultsSegue" id="fl9-rt-E5V"/>
                                 </connections>
@@ -39,10 +39,12 @@
                             <constraint firstItem="6Xd-yU-NIk" firstAttribute="leading" secondItem="LXN-QK-jh7" secondAttribute="leadingMargin" id="ZUp-st-77R"/>
                             <constraint firstItem="6Xd-yU-NIk" firstAttribute="top" secondItem="9Sw-9r-9dH" secondAttribute="top" constant="16" id="jUE-VO-nAy"/>
                             <constraint firstItem="6Xd-yU-NIk" firstAttribute="leading" secondItem="aQP-T0-JlU" secondAttribute="leading" id="lY1-js-fYK"/>
-                            <constraint firstAttribute="bottom" secondItem="aQP-T0-JlU" secondAttribute="bottom" constant="20" symbolic="YES" id="ofv-7I-SP9"/>
+                            <constraint firstAttribute="bottom" secondItem="aQP-T0-JlU" secondAttribute="bottom" constant="49" id="ofv-7I-SP9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Sw-9r-9dH"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="c65-os-1Pf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OGL-PU-lbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

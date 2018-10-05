@@ -19,6 +19,8 @@
 		C30D24E12167064500704E59 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D24E02167064500704E59 /* ResultsTableViewController.swift */; };
 		C30D24E5216707F600704E59 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30D24E4216707F600704E59 /* Combined.storyboard */; };
 		C30D24E721670CE200704E59 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D24E621670CE200704E59 /* CombinedViewController.swift */; };
+		C30D24E921670E8000704E59 /* PollingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D24E821670E8000704E59 /* PollingTabBarViewController.swift */; };
+		C30D24EB2167157700704E59 /* VoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D24EA2167157700704E59 /* VoteControllerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		C30D24E02167064500704E59 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
 		C30D24E4216707F600704E59 /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
 		C30D24E621670CE200704E59 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
+		C30D24E821670E8000704E59 /* PollingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingTabBarViewController.swift; sourceTree = "<group>"; };
+		C30D24EA2167157700704E59 /* VoteControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteControllerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +72,8 @@
 		C30D24C12166D1B700704E59 /* Polling App */ = {
 			isa = PBXGroup;
 			children = (
-				C30D24D82166D9B300704E59 /* Model */,
+				C30D24EC2167158100704E59 /* Protocol + Delegate */,
+				C30D24D82166D9B300704E59 /* Model + Controller */,
 				C30D24DB2166D9DF00704E59 /* View Controllers */,
 				C30D24D92166D9C100704E59 /* Storyboards */,
 				C30D24DA2166D9CD00704E59 /* Resources */,
@@ -76,13 +81,13 @@
 			path = "Polling App";
 			sourceTree = "<group>";
 		};
-		C30D24D82166D9B300704E59 /* Model */ = {
+		C30D24D82166D9B300704E59 /* Model + Controller */ = {
 			isa = PBXGroup;
 			children = (
 				C30D24D62166D88000704E59 /* VoteController.swift */,
 				C30D24D42166D77600704E59 /* Vote.swift */,
 			);
-			path = Model;
+			path = "Model + Controller";
 			sourceTree = "<group>";
 		};
 		C30D24D92166D9C100704E59 /* Storyboards */ = {
@@ -110,11 +115,20 @@
 		C30D24DB2166D9DF00704E59 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C30D24E821670E8000704E59 /* PollingTabBarViewController.swift */,
 				C30D24E621670CE200704E59 /* CombinedViewController.swift */,
 				C30D24E02167064500704E59 /* ResultsTableViewController.swift */,
 				C30D24C42166D1B700704E59 /* ViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C30D24EC2167158100704E59 /* Protocol + Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C30D24EA2167157700704E59 /* VoteControllerProtocol.swift */,
+			);
+			path = "Protocol + Delegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +208,11 @@
 				C30D24C52166D1B700704E59 /* ViewController.swift in Sources */,
 				C30D24D72166D88000704E59 /* VoteController.swift in Sources */,
 				C30D24D52166D77600704E59 /* Vote.swift in Sources */,
+				C30D24EB2167157700704E59 /* VoteControllerProtocol.swift in Sources */,
 				C30D24C32166D1B700704E59 /* AppDelegate.swift in Sources */,
 				C30D24E12167064500704E59 /* ResultsTableViewController.swift in Sources */,
 				C30D24E721670CE200704E59 /* CombinedViewController.swift in Sources */,
+				C30D24E921670E8000704E59 /* PollingTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
