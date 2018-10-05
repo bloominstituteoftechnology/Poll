@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Polling Tab Bar Controller-->
         <scene sceneID="nOF-Ny-a1O">
             <objects>
-                <tabBarController id="2iU-AX-O9c" sceneMemberID="viewController">
+                <tabBarController id="2iU-AX-O9c" customClass="PollingTabBarController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b18-8g-hhD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -30,8 +30,8 @@
         <!--Voting-->
         <scene sceneID="A9x-Wh-NhC">
             <objects>
-                <viewControllerPlaceholder storyboardName="Voting" id="X1q-bI-scI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="AEk-aB-SP7"/>
+                <viewControllerPlaceholder storyboardIdentifier="Voting" storyboardName="Voting" id="X1q-bI-scI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Vote" id="AEk-aB-SP7"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6a1-Hw-Wsi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,8 +40,8 @@
         <!--Results-->
         <scene sceneID="DGK-VA-vd6">
             <objects>
-                <viewControllerPlaceholder storyboardName="Results" id="HeK-eF-2it" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="nqa-y8-V2l"/>
+                <viewControllerPlaceholder storyboardIdentifier="Results" storyboardName="Results" id="HeK-eF-2it" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Results" id="nqa-y8-V2l"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiw-TR-5pj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,8 +50,8 @@
         <!--Combined-->
         <scene sceneID="RF3-SI-fXO">
             <objects>
-                <viewControllerPlaceholder storyboardName="Combined" id="bI7-ss-ydH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="brn-sZ-r5N"/>
+                <viewControllerPlaceholder storyboardIdentifier="Combined" storyboardName="Combined" id="bI7-ss-ydH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Combined" id="brn-sZ-r5N"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ybj-DR-2ha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
