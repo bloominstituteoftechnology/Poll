@@ -2,6 +2,12 @@ import UIKit
 
 class VotingViewController: UIViewController {
 
+    
+    
+    
+    
+    
+    
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var responseField: UITextField!
     

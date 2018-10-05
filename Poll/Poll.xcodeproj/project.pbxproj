@@ -86,10 +86,10 @@
 		39BEDBE52167152E00052910 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				39BEDBBD2166AF7F00052910 /* Main.storyboard */,
 				39BEDBDD2166FFFA00052910 /* Voting.storyboard */,
 				39BEDBE12167036400052910 /* Results.storyboard */,
 				39BEDBD72166CD4400052910 /* Combined.storyboard */,
-				39BEDBBD2166AF7F00052910 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -356,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZRKC88876;
-				INFOPLIST_FILE = Poll/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Poll/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,7 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZRKC88876;
-				INFOPLIST_FILE = Poll/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Poll/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

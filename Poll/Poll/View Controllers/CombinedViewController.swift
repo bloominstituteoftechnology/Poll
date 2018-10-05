@@ -1,8 +1,9 @@
 import UIKit
 
-class CombinedViewController: UIViewController {
+class CombinedViewController: UIViewController, VoteControllerProtocol {
 
-
+    var voteController: VoteController?
+    
     
     }
 
