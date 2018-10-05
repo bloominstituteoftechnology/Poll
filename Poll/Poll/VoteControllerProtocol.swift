@@ -1,5 +1,5 @@
 import UIKit
 
-protocol VoteControllerProtocol {
+protocol VoteControllerProtocol: class {
     var voteController: VoteController? { get set }
 }

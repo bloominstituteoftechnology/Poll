@@ -1,30 +1,19 @@
-//
-//  CombinedViewController.swift
-//  Poll
-//
-//  Created by Paul Yi on 10/4/18.
-//  Copyright © 2018 Paul Yi. All rights reserved.
-//
-
 import UIKit
 
-class CombinedViewController: UIViewController {
+class CombinedViewController: UIViewController, VoteControllerProtocol {
+    var voteController: VoteController?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "EmbedVotingPage" {
+            if let viewController = segue.destination as? VoteControllerProtocol {
+                viewController.voteController = voteController
+            }
+        } else if segue.identifier == "EmbedResultsTable" {
+            if let viewController = segue.destination as? VoteControllerProtocol {
+                viewController.voteController = voteController
+            }
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
