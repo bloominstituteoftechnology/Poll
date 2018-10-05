@@ -10,11 +10,10 @@ import UIKit
 
 class ResultsTableViewController: UITableViewController {
     
-    var voteController: VoteController?
+    var voteController = VoteController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     
@@ -24,7 +23,7 @@ class ResultsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0 // VoteController.newVote.count
+        return voteController.votes.count
     }
 
     
