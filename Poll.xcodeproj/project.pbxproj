@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7B13272E2166BBC30077B11F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B13272D2166BBC30077B11F /* AppDelegate.swift */; };
-		7B1327302166BBC30077B11F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B13272F2166BBC30077B11F /* ViewController.swift */; };
 		7B1327332166BBC30077B11F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B1327312166BBC30077B11F /* Main.storyboard */; };
 		7B1327352166BBC40077B11F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1327342166BBC40077B11F /* Assets.xcassets */; };
 		7B1327382166BBC40077B11F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B1327362166BBC40077B11F /* LaunchScreen.storyboard */; };
@@ -27,7 +26,6 @@
 /* Begin PBXFileReference section */
 		7B13272A2166BBC30077B11F /* Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B13272D2166BBC30077B11F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B13272F2166BBC30077B11F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B1327322166BBC30077B11F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B1327342166BBC40077B11F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B1327372166BBC40077B11F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,24 +72,63 @@
 		7B13272C2166BBC30077B11F /* Poll */ = {
 			isa = PBXGroup;
 			children = (
+				7BF5695E2167159F0021A626 /* Protocol */,
+				7BF5695B216715140021A626 /* Model + Controller */,
+				7BF5695D216715620021A626 /* View Controllers */,
+				7BF5695C216715270021A626 /* Storyboards */,
+				7BF5695A216714FF0021A626 /* Resources */,
+			);
+			path = Poll;
+			sourceTree = "<group>";
+		};
+		7BF5695A216714FF0021A626 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				7B13272D2166BBC30077B11F /* AppDelegate.swift */,
-				7B13272F2166BBC30077B11F /* ViewController.swift */,
-				7B1327312166BBC30077B11F /* Main.storyboard */,
-				7B13273F2166BC3A0077B11F /* Vote.swift */,
-				7B1327412166BCE40077B11F /* VoteController.swift */,
-				7B1327432166C0640077B11F /* Voting.storyboard */,
-				7BF569562166D8680021A626 /* PollingTabBarViewController.swift */,
-				7B1327452166C34F0077B11F /* VotingViewController.swift */,
-				7BF569502166C82E0021A626 /* ResultsTableTableViewController.swift */,
-				7BF569582166F5F10021A626 /* VoteControllerProtocol.swift */,
-				7BF5694E2166C7150021A626 /* Results.storyboard */,
-				7BF569522166C8790021A626 /* Combined.storyboard */,
-				7BF569542166CB110021A626 /* CombinedViewController.swift */,
 				7B1327342166BBC40077B11F /* Assets.xcassets */,
 				7B1327362166BBC40077B11F /* LaunchScreen.storyboard */,
 				7B1327392166BBC40077B11F /* Info.plist */,
 			);
-			path = Poll;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7BF5695B216715140021A626 /* Model + Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B13273F2166BC3A0077B11F /* Vote.swift */,
+				7B1327412166BCE40077B11F /* VoteController.swift */,
+			);
+			path = "Model + Controller";
+			sourceTree = "<group>";
+		};
+		7BF5695C216715270021A626 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7B1327312166BBC30077B11F /* Main.storyboard */,
+				7B1327432166C0640077B11F /* Voting.storyboard */,
+				7BF5694E2166C7150021A626 /* Results.storyboard */,
+				7BF569522166C8790021A626 /* Combined.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7BF5695D216715620021A626 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BF569562166D8680021A626 /* PollingTabBarViewController.swift */,
+				7B1327452166C34F0077B11F /* VotingViewController.swift */,
+				7BF569502166C82E0021A626 /* ResultsTableTableViewController.swift */,
+				7BF569542166CB110021A626 /* CombinedViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7BF5695E2167159F0021A626 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7BF569582166F5F10021A626 /* VoteControllerProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,7 +205,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B1327302166BBC30077B11F /* ViewController.swift in Sources */,
 				7B1327422166BCE40077B11F /* VoteController.swift in Sources */,
 				7BF569592166F5F10021A626 /* VoteControllerProtocol.swift in Sources */,
 				7BF569552166CB110021A626 /* CombinedViewController.swift in Sources */,
@@ -323,7 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Poll/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Poll/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,7 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Poll/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Poll/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

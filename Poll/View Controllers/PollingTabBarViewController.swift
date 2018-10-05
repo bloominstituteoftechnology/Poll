@@ -14,7 +14,7 @@ class PollingTabBarViewController: UITabBarController {
         guard let viewControllers = self.viewControllers else { return }
         
         for v in viewControllers {
-            if var viewController = v as? VoteController {
+            if var viewController = v as? VoteControllerProtocol {
                 viewController.voteController = self.voteController
             }
         }

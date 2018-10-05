@@ -23,13 +23,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYt-Hw-sAC">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYt-Hw-sAC">
                                 <rect key="frame" x="8" y="145" width="359" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNa-XR-sn7">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNa-XR-sn7">
                                 <rect key="frame" x="8" y="205" width="359" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -43,18 +43,18 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VYt-Hw-sAC" firstAttribute="centerX" secondItem="N5d-8S-YgV" secondAttribute="centerX" id="5XU-wP-yYf"/>
-                            <constraint firstItem="VYt-Hw-sAC" firstAttribute="top" secondItem="Q43-k7-p3p" secondAttribute="top" constant="145" id="Eez-n9-FfD"/>
-                            <constraint firstItem="2an-TZ-oYH" firstAttribute="trailing" secondItem="lNa-XR-sn7" secondAttribute="trailing" constant="8" id="JDU-Ah-JaB"/>
-                            <constraint firstItem="VYt-Hw-sAC" firstAttribute="leading" secondItem="2an-TZ-oYH" secondAttribute="leading" constant="8" id="NtW-1E-9Ra"/>
-                            <constraint firstItem="2an-TZ-oYH" firstAttribute="trailing" secondItem="VYt-Hw-sAC" secondAttribute="trailing" constant="8" id="TP7-xb-8gl"/>
-                            <constraint firstItem="VYt-Hw-sAC" firstAttribute="top" secondItem="N5d-8S-YgV" secondAttribute="bottom" constant="52" id="TqX-hE-851"/>
-                            <constraint firstItem="lNa-XR-sn7" firstAttribute="leading" secondItem="2an-TZ-oYH" secondAttribute="leading" constant="8" id="UUo-yV-jIC"/>
-                            <constraint firstItem="lNa-XR-sn7" firstAttribute="top" secondItem="VYt-Hw-sAC" secondAttribute="bottom" constant="30" id="dqb-Hq-VdI"/>
-                            <constraint firstItem="lNa-XR-sn7" firstAttribute="centerX" secondItem="KOe-Id-5QB" secondAttribute="centerX" id="lNU-yj-bF0"/>
-                            <constraint firstItem="KOe-Id-5QB" firstAttribute="top" secondItem="lNa-XR-sn7" secondAttribute="bottom" constant="52" id="qB7-ev-R16"/>
+                            <constraint firstItem="lNa-XR-sn7" firstAttribute="top" secondItem="VYt-Hw-sAC" secondAttribute="bottom" constant="30" id="4Dt-K6-nfg"/>
+                            <constraint firstItem="VYt-Hw-sAC" firstAttribute="leading" secondItem="lNa-XR-sn7" secondAttribute="leading" id="EGJ-Hn-oIe"/>
+                            <constraint firstItem="VYt-Hw-sAC" firstAttribute="top" secondItem="N5d-8S-YgV" secondAttribute="bottom" constant="52" id="Reb-OX-iNz"/>
+                            <constraint firstItem="N5d-8S-YgV" firstAttribute="top" secondItem="2an-TZ-oYH" secondAttribute="top" constant="52" id="Uix-pt-R3P"/>
+                            <constraint firstItem="VYt-Hw-sAC" firstAttribute="trailing" secondItem="lNa-XR-sn7" secondAttribute="trailing" id="ZbK-Pd-uP1"/>
+                            <constraint firstItem="N5d-8S-YgV" firstAttribute="centerX" secondItem="Q43-k7-p3p" secondAttribute="centerX" id="bcG-zL-waK"/>
+                            <constraint firstItem="KOe-Id-5QB" firstAttribute="top" secondItem="lNa-XR-sn7" secondAttribute="bottom" constant="52" id="jYY-07-tf9"/>
+                            <constraint firstItem="VYt-Hw-sAC" firstAttribute="leading" secondItem="2an-TZ-oYH" secondAttribute="leading" constant="8" id="oHY-TK-nzZ"/>
+                            <constraint firstItem="lNa-XR-sn7" firstAttribute="centerX" secondItem="KOe-Id-5QB" secondAttribute="centerX" id="oOi-or-30T"/>
+                            <constraint firstItem="N5d-8S-YgV" firstAttribute="centerX" secondItem="VYt-Hw-sAC" secondAttribute="centerX" id="wzw-ho-hsP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2an-TZ-oYH"/>
                     </view>

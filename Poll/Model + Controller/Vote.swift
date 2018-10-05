@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 class Vote {
     var name: String
