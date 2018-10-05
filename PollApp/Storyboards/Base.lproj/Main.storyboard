@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ELr-XX-vVj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Polling Tab Bar View Controller-->
+        <scene sceneID="2Ba-ct-But">
+            <objects>
+                <tabBarController id="ELr-XX-vVj" customClass="PollingTabBarViewController" customModule="PollApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3YC-dh-8YL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="H9w-hW-fT5" kind="relationship" relationship="viewControllers" id="Mgc-DZ-ipe"/>
+                        <segue destination="ZNG-Bm-NMe" kind="relationship" relationship="viewControllers" id="tee-2g-E2s"/>
+                        <segue destination="bTd-s0-BxT" kind="relationship" relationship="viewControllers" id="WgW-i2-FRU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azL-Ye-1vL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-211" y="-323"/>
+        </scene>
+        <!--Voting-->
+        <scene sceneID="ucE-0W-nPb">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Voting" storyboardName="Voting" id="H9w-hW-fT5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Voting" id="baK-vu-SjA">
+                        <color key="badgeColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0n-1p-gD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395" y="-589"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="8ft-p3-MJf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Results" storyboardName="Results" id="ZNG-Bm-NMe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Results" id="7fa-GQ-YWw">
+                        <color key="badgeColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGD-qQ-umN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366" y="-324"/>
+        </scene>
+        <!--Combined-->
+        <scene sceneID="M4r-ir-2Ql">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Combined" storyboardName="Combined" id="bTd-s0-BxT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Combined" id="LBH-qw-jwe">
+                        <color key="badgeColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98L-od-Gqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413" y="-91"/>
+        </scene>
+    </scenes>
+</document>

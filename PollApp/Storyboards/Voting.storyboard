@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Km3-Ch-9ce">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voting-->
+        <scene sceneID="MLP-ai-0ef">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="My2-MT-kCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Voting" id="Km3-Ch-9ce" customClass="VotingViewController" customModule="PollApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z76-5r-3nK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your favorite color?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt4-oB-SHn">
+                                <rect key="frame" x="83" y="72" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hiJ-2M-1mW">
+                                <rect key="frame" x="16" y="146" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter A Response:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rJu-aU-Tuz">
+                                <rect key="frame" x="16" y="204" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytQ-gR-bdH">
+                                <rect key="frame" x="163" y="267" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButtonTapped:" destination="Km3-Ch-9ce" eventType="touchUpInside" id="gWy-NS-L53"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hiJ-2M-1mW" firstAttribute="trailing" secondItem="rJu-aU-Tuz" secondAttribute="trailing" id="0wR-1H-oQQ"/>
+                            <constraint firstItem="rJu-aU-Tuz" firstAttribute="centerX" secondItem="ytQ-gR-bdH" secondAttribute="centerX" id="Gap-ub-9Zn"/>
+                            <constraint firstItem="hiJ-2M-1mW" firstAttribute="leading" secondItem="rJu-aU-Tuz" secondAttribute="leading" id="RGS-ce-Y1U"/>
+                            <constraint firstItem="hiJ-2M-1mW" firstAttribute="leading" secondItem="z76-5r-3nK" secondAttribute="leadingMargin" id="UzJ-9P-76v"/>
+                            <constraint firstItem="ytQ-gR-bdH" firstAttribute="top" secondItem="rJu-aU-Tuz" secondAttribute="bottom" constant="33" id="Wx1-0S-VCZ"/>
+                            <constraint firstItem="rJu-aU-Tuz" firstAttribute="top" secondItem="hiJ-2M-1mW" secondAttribute="bottom" constant="28" id="h0g-8E-WVA"/>
+                            <constraint firstItem="hiJ-2M-1mW" firstAttribute="top" secondItem="Xt4-oB-SHn" secondAttribute="bottom" constant="53" id="jNw-Zn-PS1"/>
+                            <constraint firstItem="Xt4-oB-SHn" firstAttribute="top" secondItem="BQL-Hx-OhQ" secondAttribute="top" constant="52" id="rDy-bM-J4W"/>
+                            <constraint firstItem="hiJ-2M-1mW" firstAttribute="trailing" secondItem="z76-5r-3nK" secondAttribute="trailingMargin" id="wUm-xp-87C"/>
+                            <constraint firstItem="Xt4-oB-SHn" firstAttribute="centerX" secondItem="hiJ-2M-1mW" secondAttribute="centerX" id="xFE-OZ-Xv0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BQL-Hx-OhQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="hiJ-2M-1mW" id="9oo-SB-Rwd"/>
+                        <outlet property="responseTextField" destination="rJu-aU-Tuz" id="Fec-Fg-3il"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="151" y="14"/>
+        </scene>
+    </scenes>
+</document>

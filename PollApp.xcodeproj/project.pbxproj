@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF1318EA2166BBEF00406AA4 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1318E92166BBEF00406AA4 /* Vote.swift */; };
+		EF1318EC2166BC5C00406AA4 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1318EB2166BC5C00406AA4 /* VoteController.swift */; };
+		EF1318EE2166BFED00406AA4 /* Voting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1318ED2166BFED00406AA4 /* Voting.storyboard */; };
+		EF1318F02166C31100406AA4 /* VotingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1318EF2166C31100406AA4 /* VotingViewController.swift */; };
+		EF1318F22166CCBA00406AA4 /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1318F12166CCBA00406AA4 /* Results.storyboard */; };
+		EF1318F42166CD1F00406AA4 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1318F32166CD1F00406AA4 /* Combined.storyboard */; };
+		EF1318F82166D1DD00406AA4 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1318F72166D1DD00406AA4 /* ResultsTableViewController.swift */; };
+		EF1318FA2166EB2400406AA4 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1318F92166EB2400406AA4 /* CombinedViewController.swift */; };
+		EF1318FC2166EEC000406AA4 /* PollingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1318FB2166EEC000406AA4 /* PollingTabBarViewController.swift */; };
+		EF1318FE2166F5F300406AA4 /* VoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1318FD2166F5F300406AA4 /* VoteControllerProtocol.swift */; };
+		EF4A1C8221669F9500ACADD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A1C8121669F9500ACADD4 /* AppDelegate.swift */; };
+		EF4A1C8721669F9500ACADD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4A1C8521669F9500ACADD4 /* Main.storyboard */; };
+		EF4A1C8921669F9600ACADD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4A1C8821669F9600ACADD4 /* Assets.xcassets */; };
+		EF4A1C8C21669F9600ACADD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4A1C8A21669F9600ACADD4 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF1318E92166BBEF00406AA4 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		EF1318EB2166BC5C00406AA4 /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
+		EF1318ED2166BFED00406AA4 /* Voting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Voting.storyboard; sourceTree = "<group>"; };
+		EF1318EF2166C31100406AA4 /* VotingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingViewController.swift; sourceTree = "<group>"; };
+		EF1318F12166CCBA00406AA4 /* Results.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
+		EF1318F32166CD1F00406AA4 /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
+		EF1318F72166D1DD00406AA4 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
+		EF1318F92166EB2400406AA4 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
+		EF1318FB2166EEC000406AA4 /* PollingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingTabBarViewController.swift; sourceTree = "<group>"; };
+		EF1318FD2166F5F300406AA4 /* VoteControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteControllerProtocol.swift; sourceTree = "<group>"; };
+		EF4A1C7E21669F9500ACADD4 /* PollApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PollApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4A1C8121669F9500ACADD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF4A1C8621669F9500ACADD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF4A1C8821669F9600ACADD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF4A1C8B21669F9600ACADD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF4A1C8D21669F9600ACADD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF4A1C7B21669F9500ACADD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF1318FF2167153400406AA4 /* Model + Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF1318E92166BBEF00406AA4 /* Vote.swift */,
+				EF1318EB2166BC5C00406AA4 /* VoteController.swift */,
+			);
+			path = "Model + Controller";
+			sourceTree = "<group>";
+		};
+		EF131900216715A000406AA4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF1318EF2166C31100406AA4 /* VotingViewController.swift */,
+				EF1318F72166D1DD00406AA4 /* ResultsTableViewController.swift */,
+				EF1318F92166EB2400406AA4 /* CombinedViewController.swift */,
+				EF1318FB2166EEC000406AA4 /* PollingTabBarViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EF131901216715AE00406AA4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EF4A1C8521669F9500ACADD4 /* Main.storyboard */,
+				EF1318ED2166BFED00406AA4 /* Voting.storyboard */,
+				EF1318F12166CCBA00406AA4 /* Results.storyboard */,
+				EF1318F32166CD1F00406AA4 /* Combined.storyboard */,
+				EF4A1C8A21669F9600ACADD4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EF1319022167160800406AA4 /* Protocol & Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				EF1318FD2166F5F300406AA4 /* VoteControllerProtocol.swift */,
+			);
+			path = "Protocol & Delegates";
+			sourceTree = "<group>";
+		};
+		EF4A1C7521669F9500ACADD4 = {
+			isa = PBXGroup;
+			children = (
+				EF4A1C8021669F9500ACADD4 /* PollApp */,
+				EF4A1C7F21669F9500ACADD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF4A1C7F21669F9500ACADD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF4A1C7E21669F9500ACADD4 /* PollApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF4A1C8021669F9500ACADD4 /* PollApp */ = {
+			isa = PBXGroup;
+			children = (
+				EF4A1C8121669F9500ACADD4 /* AppDelegate.swift */,
+				EF1318FF2167153400406AA4 /* Model + Controller */,
+				EF131900216715A000406AA4 /* View Controllers */,
+				EF131901216715AE00406AA4 /* Storyboards */,
+				EF1319022167160800406AA4 /* Protocol & Delegates */,
+				EF4A1C8821669F9600ACADD4 /* Assets.xcassets */,
+				EF4A1C8D21669F9600ACADD4 /* Info.plist */,
+			);
+			path = PollApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF4A1C7D21669F9500ACADD4 /* PollApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4A1C9021669F9600ACADD4 /* Build configuration list for PBXNativeTarget "PollApp" */;
+			buildPhases = (
+				EF4A1C7A21669F9500ACADD4 /* Sources */,
+				EF4A1C7B21669F9500ACADD4 /* Frameworks */,
+				EF4A1C7C21669F9500ACADD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PollApp;
+			productName = PollApp;
+			productReference = EF4A1C7E21669F9500ACADD4 /* PollApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF4A1C7621669F9500ACADD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Evan Cruz";
+				TargetAttributes = {
+					EF4A1C7D21669F9500ACADD4 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = EF4A1C7921669F9500ACADD4 /* Build configuration list for PBXProject "PollApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF4A1C7521669F9500ACADD4;
+			productRefGroup = EF4A1C7F21669F9500ACADD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF4A1C7D21669F9500ACADD4 /* PollApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF4A1C7C21669F9500ACADD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4A1C8C21669F9600ACADD4 /* LaunchScreen.storyboard in Resources */,
+				EF1318F22166CCBA00406AA4 /* Results.storyboard in Resources */,
+				EF4A1C8921669F9600ACADD4 /* Assets.xcassets in Resources */,
+				EF4A1C8721669F9500ACADD4 /* Main.storyboard in Resources */,
+				EF1318EE2166BFED00406AA4 /* Voting.storyboard in Resources */,
+				EF1318F42166CD1F00406AA4 /* Combined.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF4A1C7A21669F9500ACADD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1318F82166D1DD00406AA4 /* ResultsTableViewController.swift in Sources */,
+				EF1318FE2166F5F300406AA4 /* VoteControllerProtocol.swift in Sources */,
+				EF1318FA2166EB2400406AA4 /* CombinedViewController.swift in Sources */,
+				EF1318EC2166BC5C00406AA4 /* VoteController.swift in Sources */,
+				EF1318FC2166EEC000406AA4 /* PollingTabBarViewController.swift in Sources */,
+				EF1318EA2166BBEF00406AA4 /* Vote.swift in Sources */,
+				EF4A1C8221669F9500ACADD4 /* AppDelegate.swift in Sources */,
+				EF1318F02166C31100406AA4 /* VotingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF4A1C8521669F9500ACADD4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF4A1C8621669F9500ACADD4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF4A1C8A21669F9600ACADD4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF4A1C8B21669F9600ACADD4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF4A1C8E21669F9600ACADD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF4A1C8F21669F9600ACADD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF4A1C9121669F9600ACADD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PollApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evancruz.PollApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF4A1C9221669F9600ACADD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PollApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evancruz.PollApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF4A1C7921669F9500ACADD4 /* Build configuration list for PBXProject "PollApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4A1C8E21669F9600ACADD4 /* Debug */,
+				EF4A1C8F21669F9600ACADD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF4A1C9021669F9600ACADD4 /* Build configuration list for PBXNativeTarget "PollApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4A1C9121669F9600ACADD4 /* Debug */,
+				EF4A1C9221669F9600ACADD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF4A1C7621669F9500ACADD4 /* Project object */;
+}
