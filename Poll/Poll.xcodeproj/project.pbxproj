@@ -75,23 +75,55 @@
 			isa = PBXGroup;
 			children = (
 				39BEDBB92166AF7F00052910 /* AppDelegate.swift */,
-				39BEDBCB2166B02100052910 /* Vote.swift */,
-				39BEDBCD2166B22500052910 /* VoteController.swift */,
-				39BEDBE32167082600052910 /* VoteControllerProtocol.swift */,
+				39BEDBE62167155900052910 /* Models */,
+				39BEDBE72167157A00052910 /* View Controllers */,
+				39BEDBE52167152E00052910 /* Storyboards */,
+				39BEDBE8216715C300052910 /* Resources */,
+			);
+			path = Poll;
+			sourceTree = "<group>";
+		};
+		39BEDBE52167152E00052910 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				39BEDBDD2166FFFA00052910 /* Voting.storyboard */,
 				39BEDBE12167036400052910 /* Results.storyboard */,
 				39BEDBD72166CD4400052910 /* Combined.storyboard */,
+				39BEDBBD2166AF7F00052910 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		39BEDBE62167155900052910 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39BEDBCB2166B02100052910 /* Vote.swift */,
+				39BEDBCD2166B22500052910 /* VoteController.swift */,
+				39BEDBE32167082600052910 /* VoteControllerProtocol.swift */,
+				39BEDBDB2166F68D00052910 /* PollingTabBarController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		39BEDBE72167157A00052910 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				39BEDBD92166D63100052910 /* CombinedViewController.swift */,
 				39BEDBD52166CB3B00052910 /* ResultsTableViewController.swift */,
 				39BEDBD12166C32300052910 /* VotingViewController.swift */,
 				39BEDBBB2166AF7F00052910 /* ViewController.swift */,
-				39BEDBBD2166AF7F00052910 /* Main.storyboard */,
-				39BEDBDB2166F68D00052910 /* PollingTabBarController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		39BEDBE8216715C300052910 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				39BEDBC02166AF7F00052910 /* Assets.xcassets */,
 				39BEDBC22166AF7F00052910 /* LaunchScreen.storyboard */,
 				39BEDBC52166AF7F00052910 /* Info.plist */,
 			);
-			path = Poll;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

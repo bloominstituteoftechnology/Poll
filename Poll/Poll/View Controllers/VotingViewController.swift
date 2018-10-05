@@ -6,8 +6,6 @@ class VotingViewController: UIViewController {
     @IBOutlet weak var responseField: UITextField!
     
     
-    
-    
     @IBAction func submitButton(_ sender: Any) {
         
         
