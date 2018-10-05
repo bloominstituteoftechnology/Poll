@@ -9,36 +9,45 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Combined View Controller-->
+        <!--Combined-->
         <scene sceneID="3BM-dF-0mO">
             <objects>
-                <viewController id="neK-lt-D0x" customClass="CombinedViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Combined" id="neK-lt-D0x" customClass="CombinedViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3cd-a7-Z7k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gis-1t-WaX">
-                                <rect key="frame" x="67" y="92" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gis-1t-WaX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="394"/>
                                 <connections>
                                     <segue destination="Y5d-jo-80j" kind="embed" identifier="VotingSegue" id="ZlJ-PT-YOe"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKT-A6-E6f">
-                                <rect key="frame" x="67" y="393" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKT-A6-E6f">
+                                <rect key="frame" x="0.0" y="422" width="375" height="196"/>
                                 <connections>
                                     <segue destination="biJ-zl-Mo9" kind="embed" identifier="ResultsSegue" id="fR6-E4-Rrw"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gis-1t-WaX" secondAttribute="trailing" id="0eh-dP-omY"/>
+                            <constraint firstItem="gis-1t-WaX" firstAttribute="trailing" secondItem="aKT-A6-E6f" secondAttribute="trailing" id="HIN-Dj-NCX"/>
+                            <constraint firstItem="aKT-A6-E6f" firstAttribute="bottom" secondItem="qGc-I4-rZ9" secondAttribute="bottom" id="Spi-RR-G4x"/>
+                            <constraint firstItem="gis-1t-WaX" firstAttribute="top" secondItem="qGc-I4-rZ9" secondAttribute="top" id="Vbl-0j-Yzh"/>
+                            <constraint firstItem="gis-1t-WaX" firstAttribute="leading" secondItem="aKT-A6-E6f" secondAttribute="leading" id="dbn-OF-Ron"/>
+                            <constraint firstItem="aKT-A6-E6f" firstAttribute="top" secondItem="3cd-a7-Z7k" secondAttribute="top" constant="422" id="mAb-G1-yFr"/>
+                            <constraint firstItem="gis-1t-WaX" firstAttribute="leading" secondItem="3cd-a7-Z7k" secondAttribute="leading" id="uaQ-OW-zcF"/>
+                            <constraint firstItem="aKT-A6-E6f" firstAttribute="top" secondItem="gis-1t-WaX" secondAttribute="bottom" constant="8" symbolic="YES" id="yvp-9l-nnu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qGc-I4-rZ9"/>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ra-OI-xcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="5"/>
+            <point key="canvasLocation" x="-31.199999999999999" y="4.9475262368815596"/>
         </scene>
         <!--Voting-->
         <scene sceneID="rdX-WW-yks">

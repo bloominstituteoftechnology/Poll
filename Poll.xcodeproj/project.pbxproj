@@ -20,6 +20,8 @@
 		7BF569512166C82E0021A626 /* ResultsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF569502166C82E0021A626 /* ResultsTableTableViewController.swift */; };
 		7BF569532166C8790021A626 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF569522166C8790021A626 /* Combined.storyboard */; };
 		7BF569552166CB110021A626 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF569542166CB110021A626 /* CombinedViewController.swift */; };
+		7BF569572166D8680021A626 /* PollingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF569562166D8680021A626 /* PollingTabBarViewController.swift */; };
+		7BF569592166F5F10021A626 /* VoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF569582166F5F10021A626 /* VoteControllerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		7BF569502166C82E0021A626 /* ResultsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableTableViewController.swift; sourceTree = "<group>"; };
 		7BF569522166C8790021A626 /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
 		7BF569542166CB110021A626 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
+		7BF569562166D8680021A626 /* PollingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingTabBarViewController.swift; sourceTree = "<group>"; };
+		7BF569582166F5F10021A626 /* VoteControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteControllerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +80,10 @@
 				7B13273F2166BC3A0077B11F /* Vote.swift */,
 				7B1327412166BCE40077B11F /* VoteController.swift */,
 				7B1327432166C0640077B11F /* Voting.storyboard */,
+				7BF569562166D8680021A626 /* PollingTabBarViewController.swift */,
 				7B1327452166C34F0077B11F /* VotingViewController.swift */,
 				7BF569502166C82E0021A626 /* ResultsTableTableViewController.swift */,
+				7BF569582166F5F10021A626 /* VoteControllerProtocol.swift */,
 				7BF5694E2166C7150021A626 /* Results.storyboard */,
 				7BF569522166C8790021A626 /* Combined.storyboard */,
 				7BF569542166CB110021A626 /* CombinedViewController.swift */,
@@ -164,8 +170,10 @@
 			files = (
 				7B1327302166BBC30077B11F /* ViewController.swift in Sources */,
 				7B1327422166BCE40077B11F /* VoteController.swift in Sources */,
+				7BF569592166F5F10021A626 /* VoteControllerProtocol.swift in Sources */,
 				7BF569552166CB110021A626 /* CombinedViewController.swift in Sources */,
 				7B1327402166BC3A0077B11F /* Vote.swift in Sources */,
+				7BF569572166D8680021A626 /* PollingTabBarViewController.swift in Sources */,
 				7BF569512166C82E0021A626 /* ResultsTableTableViewController.swift in Sources */,
 				7B13272E2166BBC30077B11F /* AppDelegate.swift in Sources */,
 				7B1327462166C34F0077B11F /* VotingViewController.swift in Sources */,

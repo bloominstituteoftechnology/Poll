@@ -8,40 +8,51 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Polling Tab Bar View Controller-->
         <scene sceneID="uo5-u5-Vf3">
             <objects>
-                <tabBarController id="TsC-WZ-kuG" sceneMemberID="viewController">
+                <tabBarController id="TsC-WZ-kuG" customClass="PollingTabBarViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="THA-gJ-l7g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
+                    <connections>
+                        <segue destination="70J-Ad-pET" kind="relationship" relationship="viewControllers" id="JsZ-4q-O1y"/>
+                        <segue destination="0bj-7T-Wut" kind="relationship" relationship="viewControllers" id="JoL-2Z-W5b"/>
+                        <segue destination="Ooo-Jd-Hie" kind="relationship" relationship="viewControllers" id="0j3-j4-KJB"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8iZ-05-88d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-321" y="175"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Voting-->
         <scene sceneID="t0L-VI-pLX">
             <objects>
-                <viewControllerPlaceholder id="70J-Ad-pET" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Voting" id="70J-Ad-pET" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Voting" id="Ygt-k5-42T"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Az-QT-JoG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="514" y="-112"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Results-->
         <scene sceneID="aBZ-Xg-4WG">
             <objects>
-                <viewControllerPlaceholder id="0bj-7T-Wut" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Results" id="0bj-7T-Wut" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Results" id="wKi-7U-Xq6"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i7J-N8-fqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="514" y="175"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Combined-->
         <scene sceneID="Yyg-pM-A9m">
             <objects>
-                <viewControllerPlaceholder id="Ooo-Jd-Hie" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Combined" id="Ooo-Jd-Hie" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Combined" id="EAH-48-d0c"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vU-T2-Qur" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="514" y="462"/>

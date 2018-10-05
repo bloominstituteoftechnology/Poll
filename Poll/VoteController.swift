@@ -3,10 +3,9 @@ import UIKit
 class VoteController {
     var votes: [Vote] = []
     
-    func Create(name: String, response: String) {
+    func create(name: String, response: String) {
         
-        let newVote = Vote(name: name, response: response)
-        
+        let vote = Vote(name: name, response: response)
+        votes.append(vote)
     }
-    
 }
