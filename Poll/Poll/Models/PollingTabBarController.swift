@@ -8,13 +8,15 @@ class PollingTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        func passVoteControllerToChildViewControllers() {
+        passVoteControllerToChildViewControllers()
+         }
+    
+    func passVoteControllerToChildViewControllers() {
             
             guard let viewControllers = self.viewControllers else { return }
             for i in viewControllers {
                 if var viewController = i as? VoteControllerProtocol {
                     viewController.voteController = self.voteController
-                }
             }
         }
     }
