@@ -12,10 +12,12 @@
         <scene sceneID="nOF-Ny-a1O">
             <objects>
                 <tabBarController id="2iU-AX-O9c" customClass="PollingTabBarController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b18-8g-hhD">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" itemPositioning="fill" id="b18-8g-hhD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="selectedImageTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="X1q-bI-scI" kind="relationship" relationship="viewControllers" id="SdN-s3-HUa"/>
@@ -31,7 +33,9 @@
         <scene sceneID="A9x-Wh-NhC">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="Voting" storyboardName="Voting" id="X1q-bI-scI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Vote" id="AEk-aB-SP7"/>
+                    <tabBarItem key="tabBarItem" title="Vote" image="Vote" id="AEk-aB-SP7">
+                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6a1-Hw-Wsi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +45,7 @@
         <scene sceneID="DGK-VA-vd6">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="Results" storyboardName="Results" id="HeK-eF-2it" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Results" id="nqa-y8-V2l"/>
+                    <tabBarItem key="tabBarItem" title="Results" image="results" id="nqa-y8-V2l"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiw-TR-5pj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,11 +55,16 @@
         <scene sceneID="RF3-SI-fXO">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="Combined" storyboardName="Combined" id="bI7-ss-ydH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Combined" id="brn-sZ-r5N"/>
+                    <tabBarItem key="tabBarItem" title="Combined" image="combined" id="brn-sZ-r5N"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ybj-DR-2ha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="621" y="277"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Vote" width="16" height="16"/>
+        <image name="combined" width="16" height="16"/>
+        <image name="results" width="16" height="16"/>
+    </resources>
 </document>
