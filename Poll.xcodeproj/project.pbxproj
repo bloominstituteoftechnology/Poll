@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		4C38C3EA219BB3DB00AFEE19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38C3E9219BB3DB00AFEE19 /* AppDelegate.swift */; };
-		4C38C3EC219BB3DB00AFEE19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38C3EB219BB3DB00AFEE19 /* ViewController.swift */; };
+		4C38C3EC219BB3DB00AFEE19 /* VoteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38C3EB219BB3DB00AFEE19 /* VoteScreen.swift */; };
 		4C38C3EF219BB3DB00AFEE19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C38C3ED219BB3DB00AFEE19 /* Main.storyboard */; };
 		4C38C3F1219BB3DD00AFEE19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C38C3F0219BB3DD00AFEE19 /* Assets.xcassets */; };
 		4C38C3F4219BB3DD00AFEE19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C38C3F2219BB3DD00AFEE19 /* LaunchScreen.storyboard */; };
+		4C38C3FC219BF45700AFEE19 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38C3FB219BF45700AFEE19 /* Vote.swift */; };
+		4C38C3FE219BF50C00AFEE19 /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38C3FD219BF50C00AFEE19 /* ResultScreen.swift */; };
+		4C38C400219BF62500AFEE19 /* VoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38C3FF219BF62500AFEE19 /* VoteManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C38C3E6219BB3DB00AFEE19 /* Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C38C3E9219BB3DB00AFEE19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C38C3EB219BB3DB00AFEE19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C38C3EB219BB3DB00AFEE19 /* VoteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteScreen.swift; sourceTree = "<group>"; };
 		4C38C3EE219BB3DB00AFEE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C38C3F0219BB3DD00AFEE19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C38C3F3219BB3DD00AFEE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C38C3F5219BB3DD00AFEE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C38C3FB219BF45700AFEE19 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		4C38C3FD219BF50C00AFEE19 /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
+		4C38C3FF219BF62500AFEE19 /* VoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				4C38C3E9219BB3DB00AFEE19 /* AppDelegate.swift */,
-				4C38C3EB219BB3DB00AFEE19 /* ViewController.swift */,
+				4C38C3EB219BB3DB00AFEE19 /* VoteScreen.swift */,
+				4C38C3FF219BF62500AFEE19 /* VoteManager.swift */,
+				4C38C3FD219BF50C00AFEE19 /* ResultScreen.swift */,
+				4C38C3FB219BF45700AFEE19 /* Vote.swift */,
 				4C38C3ED219BB3DB00AFEE19 /* Main.storyboard */,
 				4C38C3F0219BB3DD00AFEE19 /* Assets.xcassets */,
 				4C38C3F2219BB3DD00AFEE19 /* LaunchScreen.storyboard */,
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C38C3EC219BB3DB00AFEE19 /* ViewController.swift in Sources */,
+				4C38C400219BF62500AFEE19 /* VoteManager.swift in Sources */,
+				4C38C3FE219BF50C00AFEE19 /* ResultScreen.swift in Sources */,
+				4C38C3EC219BB3DB00AFEE19 /* VoteScreen.swift in Sources */,
+				4C38C3FC219BF45700AFEE19 /* Vote.swift in Sources */,
 				4C38C3EA219BB3DB00AFEE19 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
