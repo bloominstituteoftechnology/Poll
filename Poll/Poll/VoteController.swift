@@ -10,12 +10,15 @@ import Foundation
 
 class VoteController {
 	
-	var votes = [Vote]()
-	var voters = Set<String>()
+	private var _votes = [Vote]()
+	var votes: [Vote] {
+		return _votes
+	}
+	private var voters = Set<String>()
 	
 	func createNewVote(with name: String, andResponse response: String) {
 		if !voters.contains(name) { // each person can only vote once!
-			votes.append(Vote(name: name, response: response))
+			_votes.append(Vote(name: name, response: response))
 			voters.insert(name)
 		}
 	}

@@ -8,8 +8,10 @@
 
 import UIKit
 
-class VotingViewController: UIViewController {
+class VotingViewController: UIViewController, VoteControllerProtocol {
 
+	var voteController: VoteController?
+	
 	@IBOutlet var nameLabel: UITextField!
 	@IBOutlet var responseLabel: UITextField!
 	
@@ -21,6 +23,10 @@ class VotingViewController: UIViewController {
     }
     
 	@IBAction func submitButtonPressed(_ sender: UIButton) {
+		guard let name = nameLabel.text, let response = responseLabel.text else { return }
+		
+		voteController?.createNewVote(with: name, andResponse: response)
+		
 	}
 	
     /*
@@ -32,5 +38,4 @@ class VotingViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
