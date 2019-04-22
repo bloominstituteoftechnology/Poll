@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33F05EAD226E873700DEE322 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F05EAC226E873700DEE322 /* ResultTableViewCell.swift */; };
 		33FE866F226E736200DC2DF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE866E226E736200DC2DF1 /* AppDelegate.swift */; };
 		33FE8674226E736200DC2DF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FE8672226E736200DC2DF1 /* Main.storyboard */; };
 		33FE8676226E736400DC2DF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FE8675226E736400DC2DF1 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33F05EAC226E873700DEE322 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		33FE866B226E736200DC2DF1 /* Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33FE866E226E736200DC2DF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33FE8673226E736200DC2DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				33FE868E226E740500DC2DF1 /* Vote.swift */,
 				33FE8692226E74B500DC2DF1 /* VoteController.swift */,
 				33FE86A5226E7BC900DC2DF1 /* VoteControllerProtocol.swift */,
+				33F05EAC226E873700DEE322 /* ResultTableViewCell.swift */,
 				33FE8698226E777A00DC2DF1 /* Storyboards */,
 				33FE869A226E77AD00DC2DF1 /* View Controllers */,
 				33FE8699226E778B00DC2DF1 /* Resources */,
@@ -262,6 +265,7 @@
 				33FE8697226E76B500DC2DF1 /* VotingViewController.swift in Sources */,
 				33FE869E226E780100DC2DF1 /* ResultsTableViewController.swift in Sources */,
 				33FE86A2226E78D600DC2DF1 /* CombinedViewController.swift in Sources */,
+				33F05EAD226E873700DEE322 /* ResultTableViewCell.swift in Sources */,
 				33FE86A4226E7B6200DC2DF1 /* PollingTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

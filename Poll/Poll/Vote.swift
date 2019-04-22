@@ -12,9 +12,11 @@ import Foundation
 struct Vote {
 	let name: String
 	let response: String
+	let timestamp: Date
 
-	init(name: String, response: String) {
+	init(name: String, response: String, timestamp: Date = Date()) {
 		self.name = name
 		self.response = response
+		self.timestamp = timestamp
 	}
 }

@@ -20,6 +20,10 @@ class VoteController {
 		if !voters.contains(name) { // each person can only vote once!
 			_votes.append(Vote(name: name, response: response))
 			voters.insert(name)
+			
+			_votes.sort { (a, b) -> Bool in
+				a.timestamp > b.timestamp
+			}
 		}
 	}
 }

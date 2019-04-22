@@ -29,11 +29,16 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ResultCell", for: indexPath)
-
-		let vote = voteController?.votes[indexPath.row]
-		cell.textLabel?.text = vote?.name
-		cell.detailTextLabel?.text = vote?.response
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ResultCell", for: indexPath) as! ResultTableViewCell
+		
+		let calendar = Calendar.current
+		guard let vote = voteController?.votes[indexPath.row] else { fatalError() }
+		cell.nameLabel.text = vote.name
+		cell.responseLabel.text = vote.response
+		
+		let components = calendar.dateComponents([.day, .hour, .minute, .second, .month], from: vote.timestamp)
+		
+		cell.timestampLabel.text = "\(components.month!)/\(components.day!) \(components.hour!):\(components.minute!):\(components.second!)"
         // Configure the cell...
 
         return cell
