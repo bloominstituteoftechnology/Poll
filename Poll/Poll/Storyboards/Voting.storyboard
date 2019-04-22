@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voting View Controller-->
+        <scene sceneID="rsq-hH-P7h">
+            <objects>
+                <viewController id="eHZ-da-Zm5" customClass="VotingViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rR1-YX-Bmi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your favorite color?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sP3-Nh-cWf">
+                                <rect key="frame" x="0.0" y="64" width="414" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Fuf-Np-7wN">
+                                <rect key="frame" x="8" y="387" width="398" height="122"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8l-pv-MyW">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Response (color)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QcW-ld-sV3">
+                                        <rect key="frame" x="0.0" y="46" width="398" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71l-7J-OA1">
+                                        <rect key="frame" x="0.0" y="92" width="398" height="30"/>
+                                        <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitButtonPressed:" destination="eHZ-da-Zm5" eventType="touchUpInside" id="fyK-4Q-csR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fuf-Np-7wN" firstAttribute="leading" secondItem="2DD-HK-aN2" secondAttribute="leading" constant="8" id="3R1-LI-ttJ"/>
+                            <constraint firstItem="Fuf-Np-7wN" firstAttribute="centerY" secondItem="rR1-YX-Bmi" secondAttribute="centerY" id="D9g-Qb-0Iq"/>
+                            <constraint firstItem="sP3-Nh-cWf" firstAttribute="top" secondItem="2DD-HK-aN2" secondAttribute="top" constant="20" id="EWw-5O-koO"/>
+                            <constraint firstItem="sP3-Nh-cWf" firstAttribute="leading" secondItem="2DD-HK-aN2" secondAttribute="leading" id="Fw8-N5-1dM"/>
+                            <constraint firstItem="2DD-HK-aN2" firstAttribute="trailing" secondItem="sP3-Nh-cWf" secondAttribute="trailing" id="GWJ-xk-RiX"/>
+                            <constraint firstItem="2DD-HK-aN2" firstAttribute="trailing" secondItem="Fuf-Np-7wN" secondAttribute="trailing" constant="8" id="WSe-78-mLv"/>
+                            <constraint firstItem="Fuf-Np-7wN" firstAttribute="centerX" secondItem="rR1-YX-Bmi" secondAttribute="centerX" id="grf-pf-C07"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2DD-HK-aN2"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="L8l-pv-MyW" id="j5A-qE-x7h"/>
+                        <outlet property="responseLabel" destination="QcW-ld-sV3" id="WW9-Dn-QUc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ze-Hz-tTE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="139"/>
+        </scene>
+    </scenes>
+</document>
