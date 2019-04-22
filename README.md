@@ -20,7 +20,9 @@ The app has three tabs: Voting, Results, and Combined. The Voting tab allows the
 
 ## Instructions
 
-Please fork and clone this repository.
+## Part 0 - Preparation
+
+Create a new Xcode project. It should be a Single View iOS Application. Make sure you select Swift for the language, and store it in an appropriate location on your computer.
 
 ## Part 1 - Model and Model Controller
 
