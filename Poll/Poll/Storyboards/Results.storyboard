@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Results Table View Controller-->
+        <!--Results-->
         <scene sceneID="OVN-qZ-aUc">
             <objects>
                 <tableViewController id="i7U-OK-qea" customClass="ResultsTableViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,10 +48,15 @@
                             <outlet property="delegate" destination="i7U-OK-qea" id="noW-z6-eEZ"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Results" image="Globe" id="LQN-rZ-8mc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTi-ys-LF0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="151" y="168"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Globe" width="23" height="23"/>
+    </resources>
 </document>

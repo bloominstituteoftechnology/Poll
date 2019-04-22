@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Voting View Controller-->
+        <!--Voting-->
         <scene sceneID="rsq-hH-P7h">
             <objects>
                 <viewController id="eHZ-da-Zm5" customClass="VotingViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
@@ -61,6 +61,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2DD-HK-aN2"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Voting" image="Plus" id="8mz-TT-fuS"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="nameLabel" destination="L8l-pv-MyW" id="j5A-qE-x7h"/>
                         <outlet property="responseLabel" destination="QcW-ld-sV3" id="WW9-Dn-QUc"/>
@@ -71,4 +73,7 @@
             <point key="canvasLocation" x="104" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Plus" width="21" height="21"/>
+    </resources>
 </document>

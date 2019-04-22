@@ -36,7 +36,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7At-jc-Wnb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="470" y="145"/>
+            <point key="canvasLocation" x="503" y="36"/>
         </scene>
         <!--Results-->
         <scene sceneID="wAs-rr-E06">
@@ -52,11 +52,14 @@
         <scene sceneID="XkO-Gf-lAd">
             <objects>
                 <viewControllerPlaceholder storyboardName="Combined" id="0hA-t5-Jhc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Combined" id="3A0-Xn-53z"/>
+                    <tabBarItem key="tabBarItem" title="Combined" image="I" id="3A0-Xn-53z"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dff-nx-3G9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="454" y="381"/>
+            <point key="canvasLocation" x="503" y="431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="I" width="16" height="16"/>
+    </resources>
 </document>
