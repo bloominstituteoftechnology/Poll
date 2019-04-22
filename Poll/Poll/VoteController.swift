@@ -10,6 +10,8 @@ import Foundation
 
 class VoteController {
 	
+	weak var delegate: VoteControllerDelegate?
+	
 	private var _votes = [Vote]()
 	var votes: [Vote] {
 		return _votes
@@ -24,6 +26,13 @@ class VoteController {
 			_votes.sort { (a, b) -> Bool in
 				a.timestamp > b.timestamp
 			}
+			delegate?.submittedVote(from: self)
 		}
 	}
+}
+
+
+
+protocol VoteControllerDelegate: AnyObject {
+	func submittedVote(from voteController: VoteController)
 }

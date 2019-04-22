@@ -22,13 +22,17 @@ class CombinedViewController: UIViewController, VoteControllerProtocol {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+
+		//FIXME: this is ugly but it works for now
 		
 		if segue.identifier == "VotingSegue" || segue.identifier == "ResultsSegue" {
 			if let dest = segue.destination as? VoteControllerProtocol {
 				dest.voteController = voteController
 			}
+		}
+		
+		if let dest = segue.destination as? ResultsTableViewController {
+			voteController?.delegate = dest
 		}
 	}
 }

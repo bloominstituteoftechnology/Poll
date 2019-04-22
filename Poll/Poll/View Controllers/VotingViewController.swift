@@ -11,7 +11,7 @@ import UIKit
 class VotingViewController: UIViewController, VoteControllerProtocol {
 
 	var voteController: VoteController?
-	
+
 	@IBOutlet var nameLabel: UITextField!
 	@IBOutlet var responseLabel: UITextField!
 	
@@ -26,7 +26,6 @@ class VotingViewController: UIViewController, VoteControllerProtocol {
 		guard let name = nameLabel.text, let response = responseLabel.text else { return }
 		
 		voteController?.createNewVote(with: name, andResponse: response)
-		
 	}
 	
     /*

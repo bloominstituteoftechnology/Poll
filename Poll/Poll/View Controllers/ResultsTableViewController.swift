@@ -45,3 +45,9 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
     }
 
 }
+
+extension ResultsTableViewController: VoteControllerDelegate {
+	func submittedVote(from voteController: VoteController) {
+		tableView.reloadData()
+	}
+}
