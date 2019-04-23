@@ -11,6 +11,7 @@ import UIKit
 class CombinedViewController: UIViewController, VoteControllerProtocol {
 	
 	var voteController: VoteController?
+	var dataSource: VotingDataSource?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +32,18 @@ class CombinedViewController: UIViewController, VoteControllerProtocol {
 			}
 		}
 		
-		if let dest = segue.destination as? ResultsTableViewController {
-			voteController?.delegate = dest
+		// remnant from pre data source extraction
+//		if let dest = segue.destination as? ResultsTableViewController {
+//			voteController?.delegate = dest
+//		}
+		
+		if let dest = segue.destination as? UITableViewController {
+			dest.tableView.dataSource = dataSource
+			NotificationCenter.default.addObserver(forName: NSNotification.Name("VotesUpdated"), object: nil, queue: nil) { [weak dest] (notification) in
+				dest?.tableView.reloadData()
+			}
+//			dest.tableView
 		}
+
 	}
 }

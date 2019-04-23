@@ -27,12 +27,15 @@ class VoteController {
 				a.timestamp > b.timestamp
 			}
 			delegate?.submittedVote(from: self)
+			NotificationCenter.default.post(name: NSNotification.Name("VotesUpdated"), object: nil)
 		}
 	}
 }
 
 
-
+/**
+broke when removing resultstableviewcontroller for uitableviewcontroller
+*/
 protocol VoteControllerDelegate: AnyObject {
 	func submittedVote(from voteController: VoteController)
 }

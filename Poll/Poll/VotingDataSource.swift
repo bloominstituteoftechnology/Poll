@@ -1,38 +1,23 @@
 //
-//  ResultsTableViewController.swift
+//  VotingDataSource.swift
 //  Poll
 //
 //  Created by Michael Redig on 4/22/19.
 //  Copyright © 2019 Michael Redig. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-/**
-Not used so as to fulfill the extra challenge.
-*/
-class ResultsTableViewController: UITableViewController, VoteControllerProtocol {
-
+class VotingDataSource: NSObject, UITableViewDataSource, VoteControllerProtocol {
 	var voteController: VoteController?
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-	
-	override func viewWillAppear(_ animated: Bool) {
-		super.viewWillAppear(animated)
-		tableView.reloadData()
-	}
-
-    // MARK: - Table view data source
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return voteController?.votes.count ?? 0
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ResultCell", for: indexPath) as! ResultTableViewCell
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: "ResultCell", for: indexPath) as! ResultTableViewCell
 		
 		let calendar = Calendar.current
 		guard let vote = voteController?.votes[indexPath.row] else { fatalError() }
@@ -49,6 +34,10 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
 				cell.nameLabel.textColor = .white
 				cell.responseLabel.textColor = .white
 				cell.timestampLabel.textColor = .white
+			} else {
+				cell.nameLabel.textColor = .black
+				cell.responseLabel.textColor = .black
+				cell.timestampLabel.textColor = .black
 			}
 		} else {
 			cell.backgroundColor = .white
@@ -56,15 +45,10 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
 			cell.responseLabel.textColor = .black
 			cell.timestampLabel.textColor = .black
 		}
-        // Configure the cell...
-
-        return cell
-    }
-
-}
-
-extension ResultsTableViewController: VoteControllerDelegate {
-	func submittedVote(from voteController: VoteController) {
-		tableView.reloadData()
+		// Configure the cell...
+		
+		return cell
 	}
+
+	
 }
