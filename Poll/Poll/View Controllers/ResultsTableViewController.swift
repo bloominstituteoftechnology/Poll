@@ -39,6 +39,20 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
 		let components = calendar.dateComponents([.day, .hour, .minute, .second, .month], from: vote.timestamp)
 		
 		cell.timestampLabel.text = "\(components.month!)/\(components.day!) \(components.hour!):\(components.minute!):\(components.second!)"
+		
+		if let bgColor = ColorStructDict.getColor(named: vote.response) {
+			cell.backgroundColor = bgColor.uiColor
+			if bgColor.isDarkColor {
+				cell.nameLabel.textColor = .white
+				cell.responseLabel.textColor = .white
+				cell.timestampLabel.textColor = .white
+			}
+		} else {
+			cell.backgroundColor = .white
+			cell.nameLabel.textColor = .black
+			cell.responseLabel.textColor = .black
+			cell.timestampLabel.textColor = .black
+		}
         // Configure the cell...
 
         return cell
