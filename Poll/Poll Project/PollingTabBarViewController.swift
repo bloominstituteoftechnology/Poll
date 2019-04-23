@@ -1,15 +1,29 @@
 //
-//  CombinedViewController.swift
-//  Poll
+//  PollingTabBarViewController.swift
+//  Poll Project
 //
-//  Created by Jonathan Ferrer on 4/22/19.
+//  Created by Jonathan Ferrer on 4/23/19.
 //  Copyright © 2019 Jonathan Ferrer. All rights reserved.
 //
 
 import UIKit
 
-class CombinedViewController: UIViewController {
-
+class PollingTabBarViewController: UITabBarController {
+    
+    
+    let voteController: VoteController
+    
+    
+    func passVoteToChildViewController(){
+        
+        
+        
+    }
+    
+    init(voteController: VoteController) {
+        self.voteController = voteController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
