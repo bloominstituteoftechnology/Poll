@@ -14,7 +14,7 @@ This application requires you to implement concepts such as using table view con
 
 Watch the screen recording below in order to know how final product should look and behave:
 
-![](https://user-images.githubusercontent.com/16965587/43245136-71d37ff6-906a-11e8-9636-a1167ea96915.gif)
+![](https://user-images.githubusercontent.com/16965587/56761603-febc9480-675a-11e9-9761-3d0ca8f2cbe7.gif)
 
 The app has three tabs: Voting, Results, and Combined. The Voting tab allows the user to submit a response to the poll. The Results tab displays a table view with submitted results. The Combined tab shows a view controller that uses view controller containment to display both the vote submission interface and the results table view on a single screen.
 
