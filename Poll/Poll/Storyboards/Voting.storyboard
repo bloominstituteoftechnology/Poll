@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FvV-gG-5cm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vote-->
+        <scene sceneID="8Q4-Lj-ET5">
+            <objects>
+                <viewController id="FvV-gG-5cm" customClass="VotingViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kHb-Rt-c31">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your favorite color?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCI-cq-AnS">
+                                <rect key="frame" x="0.0" y="40" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ySw-hS-R86">
+                                <rect key="frame" x="100" y="169" width="175" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8p-1N-k98">
+                                <rect key="frame" x="163" y="239" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButton:" destination="FvV-gG-5cm" eventType="touchUpInside" id="okD-oA-czq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dFb-ce-GKr">
+                                <rect key="frame" x="100" y="111" width="175" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C8p-1N-k98" firstAttribute="top" secondItem="GCI-cq-AnS" secondAttribute="bottom" constant="178.5" id="AD1-br-lol"/>
+                            <constraint firstItem="avC-jk-8R6" firstAttribute="trailing" secondItem="C8p-1N-k98" secondAttribute="trailing" constant="163" id="K7S-ap-IcJ"/>
+                            <constraint firstItem="avC-jk-8R6" firstAttribute="trailing" secondItem="dFb-ce-GKr" secondAttribute="trailing" constant="100" id="NFA-3R-dua"/>
+                            <constraint firstItem="dFb-ce-GKr" firstAttribute="leading" secondItem="avC-jk-8R6" secondAttribute="leading" constant="100" id="ORd-X0-Ab5"/>
+                            <constraint firstItem="ySw-hS-R86" firstAttribute="top" secondItem="dFb-ce-GKr" secondAttribute="bottom" constant="28" id="Odv-l0-RZF"/>
+                            <constraint firstItem="GCI-cq-AnS" firstAttribute="leading" secondItem="avC-jk-8R6" secondAttribute="leading" id="THl-0p-Wsw"/>
+                            <constraint firstItem="C8p-1N-k98" firstAttribute="top" secondItem="ySw-hS-R86" secondAttribute="bottom" constant="40" id="VUr-bx-k9V"/>
+                            <constraint firstItem="GCI-cq-AnS" firstAttribute="top" secondItem="avC-jk-8R6" secondAttribute="top" constant="20" id="i4d-Tk-WIE"/>
+                            <constraint firstItem="ySw-hS-R86" firstAttribute="leading" secondItem="avC-jk-8R6" secondAttribute="leading" constant="100" id="pbP-cV-JbX"/>
+                            <constraint firstItem="dFb-ce-GKr" firstAttribute="top" secondItem="GCI-cq-AnS" secondAttribute="bottom" constant="50.5" id="q5H-a9-aOO"/>
+                            <constraint firstItem="avC-jk-8R6" firstAttribute="trailing" secondItem="ySw-hS-R86" secondAttribute="trailing" constant="100" id="rkN-Ze-xJg"/>
+                            <constraint firstItem="GCI-cq-AnS" firstAttribute="trailing" secondItem="avC-jk-8R6" secondAttribute="trailing" id="s9H-5u-ZdN"/>
+                            <constraint firstItem="C8p-1N-k98" firstAttribute="leading" secondItem="avC-jk-8R6" secondAttribute="leading" priority="500" constant="163" id="veC-uS-pae"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="avC-jk-8R6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Vote" id="jsH-ak-XbB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nameField" destination="dFb-ce-GKr" id="0QF-oU-4Ng"/>
+                        <outlet property="responseField" destination="ySw-hS-R86" id="aR8-Ur-k51"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eu7-3r-jfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="128.18590704647679"/>
+        </scene>
+    </scenes>
+</document>
