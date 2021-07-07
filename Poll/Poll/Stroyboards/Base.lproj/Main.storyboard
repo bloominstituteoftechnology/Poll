@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tcS-qm-cXu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Polling Tab Bar View Controller-->
+        <scene sceneID="Syg-up-i19">
+            <objects>
+                <tabBarController id="tcS-qm-cXu" customClass="PollingTabBarViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="den-Vl-dmP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Pnu-tE-JKA" kind="relationship" relationship="viewControllers" id="k9j-ni-IgZ"/>
+                        <segue destination="M6B-zS-y2I" kind="relationship" relationship="viewControllers" id="DfM-EC-6lM"/>
+                        <segue destination="Nky-p5-ZrS" kind="relationship" relationship="viewControllers" id="Pa4-B4-3v6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QdL-Ud-aXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-404" y="-8"/>
+        </scene>
+        <!--Voting-->
+        <scene sceneID="Kif-jM-kva">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Voting" id="Pnu-tE-JKA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Voting" id="UBy-34-4Vk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbQ-U4-RVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="-297"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="PY8-Ur-kLb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Results" id="M6B-zS-y2I" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Results" id="zHp-1w-KdS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PSF-wU-Yf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="-10"/>
+        </scene>
+        <!--Combined-->
+        <scene sceneID="JfK-3Y-zdV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Combined" id="Nky-p5-ZrS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Combined" id="MSK-uS-ulU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsa-5U-O3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="279"/>
+        </scene>
+    </scenes>
+</document>
