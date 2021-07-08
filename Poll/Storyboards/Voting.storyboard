@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GXS-Jv-3PT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voting-->
+        <scene sceneID="Gow-8m-eHX">
+            <objects>
+                <viewController title="Voting" id="GXS-Jv-3PT" customClass="VotingViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q43-k7-p3p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your favorite color?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5d-8S-YgV">
+                                <rect key="frame" x="83" y="72" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYt-Hw-sAC">
+                                <rect key="frame" x="8" y="145" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNa-XR-sn7">
+                                <rect key="frame" x="8" y="205" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOe-Id-5QB">
+                                <rect key="frame" x="163" y="287" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButton:" destination="GXS-Jv-3PT" eventType="touchUpInside" id="23q-73-ahl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lNa-XR-sn7" firstAttribute="top" secondItem="VYt-Hw-sAC" secondAttribute="bottom" constant="30" id="4Dt-K6-nfg"/>
+                            <constraint firstItem="VYt-Hw-sAC" firstAttribute="leading" secondItem="lNa-XR-sn7" secondAttribute="leading" id="EGJ-Hn-oIe"/>
+                            <constraint firstItem="VYt-Hw-sAC" firstAttribute="top" secondItem="N5d-8S-YgV" secondAttribute="bottom" constant="52" id="Reb-OX-iNz"/>
+                            <constraint firstItem="N5d-8S-YgV" firstAttribute="top" secondItem="2an-TZ-oYH" secondAttribute="top" constant="52" id="Uix-pt-R3P"/>
+                            <constraint firstItem="VYt-Hw-sAC" firstAttribute="trailing" secondItem="lNa-XR-sn7" secondAttribute="trailing" id="ZbK-Pd-uP1"/>
+                            <constraint firstItem="N5d-8S-YgV" firstAttribute="centerX" secondItem="Q43-k7-p3p" secondAttribute="centerX" id="bcG-zL-waK"/>
+                            <constraint firstItem="KOe-Id-5QB" firstAttribute="top" secondItem="lNa-XR-sn7" secondAttribute="bottom" constant="52" id="jYY-07-tf9"/>
+                            <constraint firstItem="VYt-Hw-sAC" firstAttribute="leading" secondItem="2an-TZ-oYH" secondAttribute="leading" constant="8" id="oHY-TK-nzZ"/>
+                            <constraint firstItem="lNa-XR-sn7" firstAttribute="centerX" secondItem="KOe-Id-5QB" secondAttribute="centerX" id="oOi-or-30T"/>
+                            <constraint firstItem="N5d-8S-YgV" firstAttribute="centerX" secondItem="VYt-Hw-sAC" secondAttribute="centerX" id="wzw-ho-hsP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2an-TZ-oYH"/>
+                    </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="name" destination="VYt-Hw-sAC" id="mu1-Zc-00y"/>
+                        <outlet property="response" destination="lNa-XR-sn7" id="7dB-Gv-ljI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Rd-yj-ubl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="51.724137931034484"/>
+        </scene>
+    </scenes>
+</document>
