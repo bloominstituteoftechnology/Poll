@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vOv-yv-3ak">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="ms9-gl-17x">
+            <objects>
+                <viewController id="vOv-yv-3ak" customClass="CombinedViewController" customModule="Polling_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LXN-QK-jh7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Xd-yU-NIk">
+                                <rect key="frame" x="16" y="36" width="343" height="301"/>
+                                <connections>
+                                    <segue destination="1h4-K3-qEs" kind="embed" identifier="VotingSegue" id="1Hf-iB-oY3"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQP-T0-JlU">
+                                <rect key="frame" x="16" y="345" width="343" height="273"/>
+                                <connections>
+                                    <segue destination="gs0-Ej-FVG" kind="embed" identifier="ResultsSegue" id="fl9-rt-E5V"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aQP-T0-JlU" firstAttribute="top" secondItem="6Xd-yU-NIk" secondAttribute="bottom" constant="8" symbolic="YES" id="8eV-2l-b7V"/>
+                            <constraint firstItem="6Xd-yU-NIk" firstAttribute="trailing" secondItem="aQP-T0-JlU" secondAttribute="trailing" id="DYh-5i-TLC"/>
+                            <constraint firstItem="aQP-T0-JlU" firstAttribute="top" secondItem="LXN-QK-jh7" secondAttribute="top" constant="345" id="P3Z-eD-xSp"/>
+                            <constraint firstItem="6Xd-yU-NIk" firstAttribute="trailing" secondItem="LXN-QK-jh7" secondAttribute="trailingMargin" id="YJM-aO-5gv"/>
+                            <constraint firstItem="6Xd-yU-NIk" firstAttribute="leading" secondItem="LXN-QK-jh7" secondAttribute="leadingMargin" id="ZUp-st-77R"/>
+                            <constraint firstItem="6Xd-yU-NIk" firstAttribute="top" secondItem="9Sw-9r-9dH" secondAttribute="top" constant="16" id="jUE-VO-nAy"/>
+                            <constraint firstItem="6Xd-yU-NIk" firstAttribute="leading" secondItem="aQP-T0-JlU" secondAttribute="leading" id="lY1-js-fYK"/>
+                            <constraint firstAttribute="bottom" secondItem="aQP-T0-JlU" secondAttribute="bottom" constant="49" id="ofv-7I-SP9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Sw-9r-9dH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="c65-os-1Pf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OGL-PU-lbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="572" y="-328.78560719640183"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="ZuE-zc-GL5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Results" id="gs0-Ej-FVG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbS-TJ-ejL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1311" y="-193"/>
+        </scene>
+        <!--Voting-->
+        <scene sceneID="Pms-bT-BbA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Voting" id="1h4-K3-qEs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wgu-4q-yNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1284" y="-541"/>
+        </scene>
+    </scenes>
+</document>
